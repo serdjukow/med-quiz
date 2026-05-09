@@ -24,8 +24,9 @@ import {
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
-import { getMedicinaDeck, medicinaTestPath } from '../../utils/medicinaDecks'
+import { getMedicinaDeck, medicinaTestPath, medicinaCardsPath } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
+import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const buildEntries = (deck) => {
   const all = []
@@ -67,7 +68,8 @@ const MedicinaGlossaryPage = () => {
     return (
       <Box py={12} px={4}>
         <Container maxW="md">
-          <Alert status="warning" borderRadius="lg">
+          <MedicinaBreadcrumbs current="glossary" />
+          <Alert status="warning" borderRadius="lg" mt={4}>
             <AlertIcon />
             <Box>
               <AlertTitle>Словарь не найден</AlertTitle>
@@ -86,11 +88,32 @@ const MedicinaGlossaryPage = () => {
     <Box py={{ base: 6, md: 10 }} px={{ base: 3, md: 4 }}>
       <Container maxW="900px">
         <VStack spacing={6} align="stretch">
+          <MedicinaBreadcrumbs deck={deck} current="glossary" />
           <VStack align="stretch" spacing={1}>
             <HStack justify="space-between" flexWrap="wrap" gap={2}>
-              <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
-                ← Все наборы
-              </Button>
+              <HStack flexWrap="wrap" spacing={2}>
+                <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
+                  ← Все наборы
+                </Button>
+                <Button
+                  as={RouterLink}
+                  to={medicinaCardsPath(deck.id)}
+                  variant="link"
+                  colorScheme="teal"
+                  size="sm"
+                >
+                  К карточкам
+                </Button>
+                <Button
+                  as={RouterLink}
+                  to={medicinaTestPath(deck.id)}
+                  variant="link"
+                  colorScheme="teal"
+                  size="sm"
+                >
+                  К тесту
+                </Button>
+              </HStack>
               <Badge colorScheme="teal">{filtered.length}</Badge>
             </HStack>
             <Text fontSize="xs" color={muted} noOfLines={2}>
@@ -156,9 +179,6 @@ const MedicinaGlossaryPage = () => {
             ))}
           </SimpleGrid>
 
-          <Button as={RouterLink} to={medicinaTestPath(deck.id)} variant="outline" colorScheme="teal" size="sm">
-            Открыть тест этого набора
-          </Button>
         </VStack>
       </Container>
     </Box>

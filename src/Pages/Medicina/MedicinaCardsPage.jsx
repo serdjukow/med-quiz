@@ -20,8 +20,9 @@ import {
 } from '@chakra-ui/react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { FaRedo } from 'react-icons/fa'
-import { getMedicinaDeck, medicinaTestPath } from '../../utils/medicinaDecks'
+import { getMedicinaDeck, medicinaTestPath, medicinaGlossaryPath } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
+import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const MedicinaCardsPage = () => {
   const { deckId } = useParams()
@@ -46,7 +47,8 @@ const MedicinaCardsPage = () => {
     return (
       <Box py={12} px={4}>
         <Container maxW="md">
-          <Alert status="warning" borderRadius="lg">
+          <MedicinaBreadcrumbs current="cards" />
+          <Alert status="warning" borderRadius="lg" mt={4}>
             <AlertIcon />
             <Box>
               <AlertTitle>Набор не найден</AlertTitle>
@@ -79,11 +81,32 @@ const MedicinaCardsPage = () => {
     <Box pb={{ base: 24, md: 10 }} pt={{ base: 6, md: 10 }} px={{ base: 3, md: 4 }}>
       <Container maxW="560px">
         <VStack spacing={5} align="stretch">
+          <MedicinaBreadcrumbs deck={deck} current="cards" />
           <VStack align="stretch" spacing={1}>
-            <HStack justify="space-between">
-              <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
-                ← Все тесты
-              </Button>
+            <HStack justify="space-between" flexWrap="wrap" gap={2}>
+              <HStack flexWrap="wrap" spacing={2}>
+                <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
+                  ← Все наборы
+                </Button>
+                <Button
+                  as={RouterLink}
+                  to={medicinaTestPath(deck.id)}
+                  variant="link"
+                  colorScheme="teal"
+                  size="sm"
+                >
+                  К тесту
+                </Button>
+                <Button
+                  as={RouterLink}
+                  to={medicinaGlossaryPath(deck.id)}
+                  variant="link"
+                  colorScheme="teal"
+                  size="sm"
+                >
+                  Словарь
+                </Button>
+              </HStack>
               <Badge colorScheme="teal">{i + 1} / {questions.length}</Badge>
             </HStack>
             <Text fontSize="xs" color={muted} noOfLines={2}>
@@ -183,10 +206,6 @@ const MedicinaCardsPage = () => {
               onClick={() => go(1)}
             />
           </HStack>
-
-          <Button as={RouterLink} to={medicinaTestPath(deck.id)} variant="outline" colorScheme="teal" size="sm">
-            Режим теста для этого набора
-          </Button>
         </VStack>
       </Container>
     </Box>

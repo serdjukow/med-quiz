@@ -30,6 +30,7 @@ import {
   medicinaCardsPath,
   medicinaGlossaryPath,
 } from '../../utils/medicinaDecks'
+import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const MedicinaHubPage = () => {
   const [viewport, setViewport] = useState('grid')
@@ -44,6 +45,7 @@ const MedicinaHubPage = () => {
     <Box py={{ base: 8, md: 12 }}>
       <Container maxW="4xl">
         <VStack spacing={8} align="stretch">
+          <MedicinaBreadcrumbs current="hub" />
           <VStack spacing={3} textAlign="center">
             <Heading
               as="h1"

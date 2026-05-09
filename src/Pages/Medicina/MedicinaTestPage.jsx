@@ -24,6 +24,7 @@ import {
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { getMedicinaDeck, medicinaCardsPath } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
+import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const MedicinaTestPage = () => {
   const { deckId } = useParams()
@@ -63,7 +64,8 @@ const MedicinaTestPage = () => {
     return (
       <Box py={12} px={4}>
         <Container maxW="md">
-          <Alert status="warning" borderRadius="lg">
+          <MedicinaBreadcrumbs current="test" />
+          <Alert status="warning" borderRadius="lg" mt={4}>
             <AlertIcon />
             <Box>
               <AlertTitle>Тест не найден</AlertTitle>
@@ -112,9 +114,11 @@ const MedicinaTestPage = () => {
     return (
       <Box py={{ base: 8, md: 12 }} px={{ base: 3, md: 4 }}>
         <Container maxW="lg">
+          <MedicinaBreadcrumbs deck={deck} current="test" />
           <VStack
             spacing={6}
             p={{ base: 5, md: 8 }}
+            mt={4}
             bg={cardBg}
             borderRadius="2xl"
             borderWidth="1px"
@@ -152,11 +156,23 @@ const MedicinaTestPage = () => {
     <Box pb={{ base: 28, md: 12 }} pt={{ base: 6, md: 10 }} px={{ base: 3, md: 4 }}>
       <Container maxW="720px">
         <VStack spacing={5} align="stretch">
+          <MedicinaBreadcrumbs deck={deck} current="test" />
           <VStack align="stretch" spacing={1}>
             <HStack justify="space-between" flexWrap="wrap" gap={2}>
-              <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
-                ← Все тесты
-              </Button>
+              <HStack flexWrap="wrap" spacing={2}>
+                <Button as={RouterLink} to={MEDICINA_ROUTE} variant="link" colorScheme="teal" size="sm">
+                  ← Все наборы
+                </Button>
+                <Button
+                  as={RouterLink}
+                  to={medicinaCardsPath(deck.id)}
+                  variant="link"
+                  colorScheme="teal"
+                  size="sm"
+                >
+                  К карточкам
+                </Button>
+              </HStack>
               <Badge colorScheme="teal" fontSize="sm" px={2} py={1}>
                 {index + 1} / {questions.length}
               </Badge>

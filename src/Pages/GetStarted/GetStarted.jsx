@@ -156,11 +156,10 @@ const GetStarted = () => {
                     {/* Breadcrumb */}
                     <Box w="100%">
                         <Breadcrumb fontWeight='medium' fontSize='md'>
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href='/'>Home</BreadcrumbLink>
-                            </BreadcrumbItem>
                             <BreadcrumbItem isCurrentPage>
-                                <BreadcrumbLink href='#'>Get Started</BreadcrumbLink>
+                                <BreadcrumbLink as="span" cursor="default">
+                                    Выбор раздела
+                                </BreadcrumbLink>
                             </BreadcrumbItem>
                         </Breadcrumb>
                     </Box>

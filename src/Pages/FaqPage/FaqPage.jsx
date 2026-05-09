@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from 'react-router-dom'
 import {
     Container, Text, Heading, Card, CardBody, Button, Breadcrumb,
     BreadcrumbItem,
@@ -16,6 +17,7 @@ import {
     Icon
 } from '@chakra-ui/react'
 import { FaQuestionCircle, FaEnvelope, FaShieldAlt, FaBullseye } from 'react-icons/fa'
+import { GET_STARTED_ROUTE } from '../../utils/consts'
 
 const FaqPage = () => {
     // Цвета для темной/светлой темы
@@ -55,10 +57,14 @@ const FaqPage = () => {
                     <Box w="100%">
                         <Breadcrumb fontWeight='medium' fontSize='md'>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href='/'>Главная</BreadcrumbLink>
+                                <BreadcrumbLink as={RouterLink} to={GET_STARTED_ROUTE}>
+                                    Выбор раздела
+                                </BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem isCurrentPage>
-                                <BreadcrumbLink href='#'>FAQ</BreadcrumbLink>
+                                <BreadcrumbLink as="span" cursor="default">
+                                    FAQ
+                                </BreadcrumbLink>
                             </BreadcrumbItem>
                         </Breadcrumb>
                     </Box>
