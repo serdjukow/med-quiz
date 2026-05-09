@@ -15,6 +15,7 @@ const HomePage = lazy(() => import('./Pages/HomePage/HomePage'))
 const MedicinaHubPage = lazy(() => import('./Pages/Medicina/MedicinaHubPage'))
 const MedicinaTestPage = lazy(() => import('./Pages/Medicina/MedicinaTestPage'))
 const MedicinaCardsPage = lazy(() => import('./Pages/Medicina/MedicinaCardsPage'))
+const MedicinaGlossaryHubPage = lazy(() => import('./Pages/Medicina/MedicinaGlossaryHubPage'))
 const MedicinaGlossaryPage = lazy(() => import('./Pages/Medicina/MedicinaGlossaryPage'))
 const GetStarted = lazy(() => import('./Pages/GetStarted/GetStarted'))
 const FaqPage = lazy(() => import('./Pages/FaqPage/FaqPage'))
@@ -51,16 +52,7 @@ export const useRoutes = () => {
 			/>
 			<Route path={`${MEDICINA_CARDS_ROUTE}/:deckId`} element={<MedicinaCardsPage />} />
 
-			<Route
-				path={MEDICINA_GLOSSARY_ROUTE}
-				element={
-					DEFAULT_MEDICINA_DECK_ID ? (
-						<Navigate to={`${MEDICINA_GLOSSARY_ROUTE}/${DEFAULT_MEDICINA_DECK_ID}`} replace />
-					) : (
-						<Navigate to={MEDICINA_ROUTE} replace />
-					)
-				}
-			/>
+			<Route path={MEDICINA_GLOSSARY_ROUTE} element={<MedicinaGlossaryHubPage />} />
 			<Route path={`${MEDICINA_GLOSSARY_ROUTE}/:deckId`} element={<MedicinaGlossaryPage />} />
 
 			<Route path="*" element={<Navigate to={HOME_ROUTE} replace />} />

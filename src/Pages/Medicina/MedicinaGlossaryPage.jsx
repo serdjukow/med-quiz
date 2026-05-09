@@ -20,6 +20,7 @@ import {
   AlertIcon,
   AlertTitle,
   AlertDescription,
+  Divider,
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 import { useState } from 'react'
@@ -28,20 +29,18 @@ import { MEDICINA_ROUTE } from '../../utils/consts'
 
 const buildEntries = (deck) => {
   const all = []
-  deck.questions.forEach((q) => {
-    all.push({ it: q.promptIt, ru: q.promptRu, type: 'Вопрос' })
-    if (q.correctTextIt && q.answerTranslationRu) {
-      all.push({ it: q.correctTextIt, ru: q.answerTranslationRu, type: 'Ответ' })
-    }
+  deck.questions.forEach((q, idx) => {
+    all.push({
+      id: `${deck.id}-${idx}`,
+      questionIt: q.promptIt,
+      questionRu: q.promptRu,
+      answerKey: q.correctKey,
+      answerIt: q.correctTextIt ?? '',
+      answerRu: q.answerTranslationRu ?? '',
+    })
   })
 
-  const uniq = new Map()
-  all.forEach((entry) => {
-    const key = `${entry.it}__${entry.ru}`
-    if (!uniq.has(key)) uniq.set(key, entry)
-  })
-
-  return [...uniq.values()]
+  return all
 }
 
 const MedicinaGlossaryPage = () => {
@@ -58,9 +57,10 @@ const MedicinaGlossaryPage = () => {
   const normalized = query.trim().toLowerCase()
   const filtered = useMemo(() => {
     if (!normalized) return entries
-    return entries.filter(
-      (e) => e.it.toLowerCase().includes(normalized) || e.ru.toLowerCase().includes(normalized)
-    )
+    return entries.filter((e) => {
+      const searchTarget = `${e.questionIt} ${e.questionRu} ${e.answerIt} ${e.answerRu}`.toLowerCase()
+      return searchTarget.includes(normalized)
+    })
   }, [entries, normalized])
 
   if (!deck) {
@@ -101,6 +101,9 @@ const MedicinaGlossaryPage = () => {
           <Heading as="h1" size="lg">
             Итальяно-русский словарь
           </Heading>
+          <Text fontSize="sm" color={muted}>
+            Каждая карточка показывает связку вопроса и правильного ответа из набора.
+          </Text>
 
           <InputGroup>
             <InputLeftElement pointerEvents="none">
@@ -115,19 +118,38 @@ const MedicinaGlossaryPage = () => {
           </InputGroup>
 
           <SimpleGrid columns={1} spacing={3}>
-            {filtered.map((entry, idx) => (
-              <Card key={`${entry.it}-${idx}`} bg={cardBg} borderWidth="1px" borderColor={borderColor}>
+            {filtered.map((entry) => (
+              <Card key={entry.id} bg={cardBg} borderWidth="1px" borderColor={borderColor}>
                 <CardBody>
-                  <VStack align="stretch" spacing={2}>
+                  <VStack align="stretch" spacing={3}>
                     <HStack justify="space-between">
-                      <Text fontWeight="700" color={textColor}>
-                        {entry.it}
+                      <Text fontSize="xs" textTransform="uppercase" letterSpacing="wide" color={muted}>
+                        Вопрос
                       </Text>
-                      <Badge variant="subtle" colorScheme={entry.type === 'Вопрос' ? 'blue' : 'green'}>
-                        {entry.type}
+                      <Badge variant="subtle" colorScheme="purple">
+                        Вопрос + ответ
                       </Badge>
                     </HStack>
-                    <Text color={muted}>{entry.ru}</Text>
+                    <Text fontWeight="700" color={textColor}>
+                      {entry.questionIt}
+                    </Text>
+                    <Text color={muted}>Перевод: {entry.questionRu}</Text>
+
+                    <Divider borderColor={borderColor} />
+
+                    <Text fontSize="xs" textTransform="uppercase" letterSpacing="wide" color={muted}>
+                      Ответ
+                    </Text>
+                    {entry.answerIt ? (
+                      <>
+                        <Text fontWeight="700" color={textColor}>
+                          {entry.answerKey}) {entry.answerIt}
+                        </Text>
+                        <Text color={muted}>Перевод: {entry.answerRu}</Text>
+                      </>
+                    ) : (
+                      <Text color={muted}>Для этой карточки ответ не указан.</Text>
+                    )}
                   </VStack>
                 </CardBody>
               </Card>
