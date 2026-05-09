@@ -28,21 +28,21 @@ const FaqPage = () => {
     const faqItems = [
         {
             icon: FaEnvelope,
-            question: "Haben Sie Fragen?",
-            answer: "Haben Sie Fragen, Anregungen oder Probleme? Zögern Sie nicht, uns zu kontaktieren! Sie können uns eine E-Mail senden an:",
+            question: "Есть вопросы?",
+            answer: "Есть вопросы, предложения или проблемы? Напишите нам на:",
             email: "support@serdjukow.eu",
             color: "blue"
         },
         {
             icon: FaBullseye,
-            question: "Hauptziel des Projekts",
-            answer: "Hauptziel des Projekts ist es, ein nützliches und zugängliches Lernwerkzeug für alle zu schaffen, die ihre Deutschkenntnisse vertiefen möchten.",
+            question: "Главная цель проекта",
+            answer: "Главная цель проекта - создать полезный и доступный учебный инструмент для подготовки по медицине.",
             color: "green"
         },
         {
             icon: FaShieldAlt,
-            question: "Persönlichen Daten",
-            answer: "Unser Projekt ist nicht kommerziell und sammelt keine persönlichen Daten der Benutzer.",
+            question: "Персональные данные",
+            answer: "Наш проект некоммерческий и не собирает персональные данные пользователей.",
             color: "purple"
         }
     ]
@@ -55,7 +55,7 @@ const FaqPage = () => {
                     <Box w="100%">
                         <Breadcrumb fontWeight='medium' fontSize='md'>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+                                <BreadcrumbLink href='/'>Главная</BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem isCurrentPage>
                                 <BreadcrumbLink href='#'>FAQ</BreadcrumbLink>
@@ -77,11 +77,11 @@ const FaqPage = () => {
                         </Box>
 
                         <Heading as='h1' size='2xl' color={headingColor} fontWeight="700">
-                            Häufig gestellte Fragen
+                            Часто задаваемые вопросы
                         </Heading>
 
                         <Text fontSize="lg" color={textColor} maxW="600px">
-                            Hier finden Sie Antworten auf die häufigsten Fragen zu unserem Lernsystem.
+                            Здесь вы найдете ответы на самые частые вопросы о нашей учебной платформе.
                         </Text>
                     </VStack>
 
@@ -144,11 +144,11 @@ const FaqPage = () => {
                             <VStack spacing={4} textAlign="center">
                                 <Icon as={FaEnvelope} w={12} h={12} color="blue.500" />
                                 <Heading size="md" color={headingColor}>
-                                    Weitere Fragen?
+                                    Остались вопросы?
                                 </Heading>
                                 <Text color={textColor} lineHeight="1.6">
-                                    Falls Sie weitere Fragen haben oder Unterstützung benötigen,
-                                    zögern Sie nicht, uns zu kontaktieren. Wir helfen gerne!
+                                    Если у вас остались вопросы или нужна помощь,
+                                    свяжитесь с нами - мы с радостью поможем.
                                 </Text>
                                 <Button
                                     as="a"
@@ -167,7 +167,7 @@ const FaqPage = () => {
                                     borderRadius="xl"
                                     fontWeight="600"
                                 >
-                                    E-Mail senden
+                                    Написать на email
                                 </Button>
                             </VStack>
                         </CardBody>
