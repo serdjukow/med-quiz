@@ -29,10 +29,11 @@ import {
   AlertDialogOverlay,
   useDisclosure,
 } from '@chakra-ui/react'
-import { medicinaDecks, medicinaTestPath } from '../../utils/medicinaDecks'
+import { medicinaDecks, medicinaTestPath, getMedicinaDeck } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
 import { useProgress } from '../../progress/ProgressContext'
 import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
+import MistakeReviewModal from './MistakeReviewModal'
 
 const pct = (n) => `${Math.round(n * 100)}%`
 
@@ -43,6 +44,7 @@ const MedicinaProgressPage = () => {
     getDeckStats,
     getGlobalStats,
     getSessions,
+    getMistakesMap,
     resetDeck,
     resetAllProgress,
   } = useProgress()
@@ -69,7 +71,25 @@ const MedicinaProgressPage = () => {
   const sessions = getSessions()
 
   const resetAllDlg = useDisclosure()
+  const reviewModal = useDisclosure()
+  const [reviewDeckId, setReviewDeckId] = useState(null)
   const cancelRef = useRef()
+
+  const reviewDeck = reviewDeckId ? getMedicinaDeck(reviewDeckId) : null
+  const mistakesForReview =
+    reviewDeck && reviewDeckId
+      ? Object.values(getMistakesMap(reviewDeckId)).filter((m) => m.resolvedAt == null)
+      : []
+
+  const openMistakeReview = (deckId) => {
+    setReviewDeckId(deckId)
+    reviewModal.onOpen()
+  }
+
+  const closeMistakeReview = () => {
+    reviewModal.onClose()
+    setReviewDeckId(null)
+  }
 
   return (
     <Box py={{ base: 8, md: 12 }} px={{ base: 3, md: 4 }}>
@@ -243,28 +263,28 @@ const MedicinaProgressPage = () => {
                           Заново
                         </Button>
                         {st.mistakesCount > 0 ? (
-                          <Button
-                            as={RouterLink}
-                            to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
-                            colorScheme="orange"
-                            variant="outline"
-                            size="md"
-                            w="100%"
-                          >
-                            Повторить ошибки
-                          </Button>
-                        ) : (
-                          <Button
-                            colorScheme="orange"
-                            variant="outline"
-                            size="md"
-                            w="100%"
-                            isDisabled
-                            cursor="not-allowed"
-                          >
-                            Повторить ошибки
-                          </Button>
-                        )}
+                          <>
+                            <Button
+                              as={RouterLink}
+                              to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                              colorScheme="orange"
+                              variant="outline"
+                              size="md"
+                              w="100%"
+                            >
+                              Повторить ошибки
+                            </Button>
+                            <Button
+                              variant="outline"
+                              colorScheme="gray"
+                              size="md"
+                              w="100%"
+                              onClick={() => openMistakeReview(deck.id)}
+                            >
+                              Разбор ошибок
+                            </Button>
+                          </>
+                        ) : null}
                       </VStack>
                     </CardBody>
                   </Card>
@@ -312,26 +332,25 @@ const MedicinaProgressPage = () => {
                               Заново
                             </Button>
                             {st.mistakesCount > 0 ? (
-                              <Button
-                                as={RouterLink}
-                                to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
-                                size="xs"
-                                colorScheme="orange"
-                                variant="outline"
-                              >
-                                Повторить ошибки
-                              </Button>
-                            ) : (
-                              <Button
-                                size="xs"
-                                colorScheme="orange"
-                                variant="outline"
-                                isDisabled
-                                cursor="not-allowed"
-                              >
-                                Повторить ошибки
-                              </Button>
-                            )}
+                              <>
+                                <Button
+                                  as={RouterLink}
+                                  to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                                  size="xs"
+                                  colorScheme="orange"
+                                  variant="outline"
+                                >
+                                  Повторить ошибки
+                                </Button>
+                                <Button
+                                  size="xs"
+                                  variant="outline"
+                                  onClick={() => openMistakeReview(deck.id)}
+                                >
+                                  Разбор ошибок
+                                </Button>
+                              </>
+                            ) : null}
                           </HStack>
                         </Td>
                       </Tr>
@@ -413,6 +432,13 @@ const MedicinaProgressPage = () => {
           </Button>
         </VStack>
       </Container>
+
+      <MistakeReviewModal
+        isOpen={reviewModal.isOpen}
+        onClose={closeMistakeReview}
+        deck={reviewDeck}
+        mistakesForReview={mistakesForReview}
+      />
 
       <AlertDialog
         isOpen={resetAllDlg.isOpen}
