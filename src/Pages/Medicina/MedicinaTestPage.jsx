@@ -1,5 +1,5 @@
-import { useState, useMemo, useEffect } from 'react'
-import { Link as RouterLink, useParams } from 'react-router-dom'
+import { useState, useMemo, useEffect, useRef } from 'react'
+import { Link as RouterLink, useParams, useSearchParams } from 'react-router-dom'
 import {
   Box,
   Container,
@@ -20,28 +20,57 @@ import {
   AlertIcon,
   AlertTitle,
   AlertDescription,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
-import { getMedicinaDeck, medicinaCardsPath } from '../../utils/medicinaDecks'
+import { getMedicinaDeck, medicinaCardsPath, medicinaTestPath } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
 import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
+import { useProgress } from '../../progress/ProgressContext'
 
 const MedicinaTestPage = () => {
   const { deckId } = useParams()
+  const [searchParams, setSearchParams] = useSearchParams()
+  const mode = searchParams.get('mode') === 'mistakes' ? 'mistakes' : 'normal'
+
+  const { commitTestSession, getUnresolvedMistakeQuestionIds, getMistakesMap, revision } =
+    useProgress()
+
   const deck = getMedicinaDeck(deckId)
-  const questions = deck?.questions ?? []
+  const allQuestions = deck?.questions ?? []
+
+  /* eslint-disable react-hooks/exhaustive-deps -- revision сбрасывает кэш после записи в localStorage */
+  const { mistakeIdsList, activeQuestions } = useMemo(() => {
+    const list = deckId ? getUnresolvedMistakeQuestionIds(deckId) : []
+    const set = new Set(list)
+    if (!deck) return { mistakeIdsList: list, activeQuestions: [] }
+    const active =
+      mode === 'mistakes' ? deck.questions.filter((q) => set.has(q.id)) : deck.questions
+    return { mistakeIdsList: list, activeQuestions: active }
+  }, [deck, deckId, mode, getUnresolvedMistakeQuestionIds, revision])
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   const [index, setIndex] = useState(0)
-  const [selectedKey, setSelectedKey] = useState(null)
-  const [scores, setScores] = useState([])
+  const [answerByIndex, setAnswerByIndex] = useState([])
   const [showExpl, setShowExpl] = useState(true)
+  const sessionStartRef = useRef(new Date().toISOString())
+  const reviewModal = useDisclosure()
+
+  useEffect(() => {
+    sessionStartRef.current = new Date().toISOString()
+  }, [deckId, mode])
 
   useEffect(() => {
     setIndex(0)
-    setSelectedKey(null)
-    setScores([])
+    setAnswerByIndex([])
     setShowExpl(true)
-  }, [deckId])
+  }, [deckId, mode])
 
   const cardBg = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.600')
@@ -50,17 +79,23 @@ const MedicinaTestPage = () => {
   const optionBg = useColorModeValue('gray.50', 'gray.700')
   const stickyBarBg = useColorModeValue('whiteAlpha.920', 'gray.900')
 
-  const q = questions[index]
-  const answered = selectedKey !== null
-  const isLast = index >= questions.length - 1
-  const finished = index >= questions.length
+  const q = activeQuestions[index]
+  const currentAnswer = answerByIndex[index]
+  const answered = !!currentAnswer
+  const selectedKey = currentAnswer?.selectedKey ?? null
+  const isLast = index >= activeQuestions.length - 1
+  const finished = index >= activeQuestions.length
 
   const correctCount = useMemo(
-    () => scores.filter(Boolean).length,
-    [scores]
+    () => answerByIndex.filter((a) => a && a.isCorrect).length,
+    [answerByIndex]
   )
 
-  if (!deck || questions.length === 0) {
+  const mistakesForReview = deck
+    ? Object.values(getMistakesMap(deck.id)).filter((m) => m.resolvedAt == null)
+    : []
+
+  if (!deck || allQuestions.length === 0) {
     return (
       <Box py={12} px={4}>
         <Container maxW="md">
@@ -82,32 +117,79 @@ const MedicinaTestPage = () => {
     )
   }
 
+  if (mode === 'mistakes' && activeQuestions.length === 0) {
+    return (
+      <Box py={{ base: 8, md: 12 }} px={{ base: 3, md: 4 }}>
+        <Container maxW="md">
+          <MedicinaBreadcrumbs deck={deck} current="test" />
+          <Alert status="info" borderRadius="lg" mt={4}>
+            <AlertIcon />
+            <Box>
+              <AlertTitle>Нет ошибок для повтора</AlertTitle>
+              <AlertDescription>
+                Нерешённых ошибок по этому набору пока нет. Пройдите обычный тест или сбросьте прогресс в разделе «Мой прогресс».
+              </AlertDescription>
+            </Box>
+          </Alert>
+          <Button as={RouterLink} to={medicinaTestPath(deck.id)} colorScheme="teal" mt={6} w="100%">
+            Обычный тест
+          </Button>
+        </Container>
+      </Box>
+    )
+  }
+
   const pickOption = (key) => {
     if (answered) return
-    setSelectedKey(key)
-    const ok = key === q.correctKey
-    setScores((prev) => {
+    const row = {
+      questionId: q.id,
+      selectedKey: key,
+      correctKey: q.correctKey,
+      isCorrect: key === q.correctKey,
+    }
+    setAnswerByIndex((prev) => {
       const next = [...prev]
-      next[index] = ok
+      next[index] = row
       return next
     })
   }
 
+  const flushSession = () => {
+    const answers = answerByIndex.filter(Boolean)
+    if (answers.length > 0) {
+      commitTestSession({
+        deckId: deck.id,
+        mode,
+        startedAt: sessionStartRef.current,
+        finishedAt: new Date().toISOString(),
+        answers,
+      })
+    }
+  }
+
   const goNext = () => {
     if (isLast) {
-      setIndex(questions.length)
+      flushSession()
+      setIndex(activeQuestions.length)
       return
     }
     setIndex((i) => i + 1)
-    setSelectedKey(null)
     setShowExpl(true)
   }
 
-  const restart = () => {
+  const restartNormal = () => {
+    setSearchParams({}, { replace: true })
     setIndex(0)
-    setSelectedKey(null)
-    setScores([])
+    setAnswerByIndex([])
     setShowExpl(true)
+    sessionStartRef.current = new Date().toISOString()
+  }
+
+  const restartSameMode = () => {
+    setIndex(0)
+    setAnswerByIndex([])
+    setShowExpl(true)
+    sessionStartRef.current = new Date().toISOString()
   }
 
   if (finished) {
@@ -125,19 +207,50 @@ const MedicinaTestPage = () => {
             borderColor={borderColor}
             textAlign="center"
           >
+            <HStack justify="center" flexWrap="wrap" spacing={2}>
+              {mode === 'mistakes' ? (
+                <Badge colorScheme="purple">Повтор ошибок</Badge>
+              ) : (
+                <Badge colorScheme="teal">Обычный тест</Badge>
+              )}
+            </HStack>
             <Text fontSize="sm" color={muted} noOfLines={3}>
               {deck.title}
             </Text>
             <Heading size="lg">Результат</Heading>
             <Text fontSize="3xl" fontWeight="700" color="teal.500">
-              {correctCount} / {questions.length}
+              {correctCount} / {activeQuestions.length}
             </Text>
             <Text color={muted}>
-              Правильных: {correctCount}. Можно пройти тест ещё раз или перейти к карточкам.
+              Правильных: {correctCount}. Можно пройти снова, повторить ошибки или открыть разбор.
             </Text>
-            <HStack spacing={4} flexWrap="wrap" justify="center">
-              <Button colorScheme="teal" onClick={restart}>
-                Повторить тест
+            <HStack spacing={3} flexWrap="wrap" justify="center">
+              <Button colorScheme="teal" onClick={restartNormal}>
+                {mode === 'mistakes' ? 'Полный тест' : 'Повторить тест'}
+              </Button>
+              <Button variant="outline" colorScheme="teal" onClick={restartSameMode}>
+                Ещё раз {mode === 'mistakes' ? '(ошибки)' : ''}
+              </Button>
+              {mistakeIdsList.length > 0 ? (
+                <Button
+                  as={RouterLink}
+                  to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                  variant="outline"
+                  colorScheme="orange"
+                >
+                  Повторить ошибки
+                </Button>
+              ) : (
+                <Button variant="outline" colorScheme="orange" isDisabled cursor="not-allowed">
+                  Повторить ошибки
+                </Button>
+              )}
+              <Button
+                variant="outline"
+                onClick={reviewModal.onOpen}
+                isDisabled={mistakesForReview.length === 0}
+              >
+                Разбор ошибок
               </Button>
               <Button as={RouterLink} to={medicinaCardsPath(deck.id)} variant="outline" colorScheme="teal">
                 Карточки
@@ -147,6 +260,58 @@ const MedicinaTestPage = () => {
               </Button>
             </HStack>
           </VStack>
+
+          <Modal isOpen={reviewModal.isOpen} onClose={reviewModal.onClose} size="xl">
+            <ModalOverlay />
+            <ModalContent mx={4}>
+              <ModalHeader>Разбор ошибок</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody pb={6}>
+                <VStack align="stretch" spacing={4}>
+                  {mistakesForReview.map((m) => {
+                    const question = deck.questions.find((qq) => qq.id === m.questionId)
+                    if (!question) return null
+                    return (
+                      <Box
+                        key={m.questionId}
+                        p={4}
+                        borderWidth="1px"
+                        borderColor={borderColor}
+                        borderRadius="lg"
+                      >
+                        <Text fontSize="xs" color={muted} mb={1}>
+                          Вопрос
+                        </Text>
+                        <Text fontWeight="700" mb={2}>
+                          {question.promptIt}
+                        </Text>
+                        <Text fontSize="sm" color={muted} mb={3}>
+                          Перевод: {question.promptRu}
+                        </Text>
+                        <Text fontSize="sm" color="red.500">
+                          Ваш ответ: {m.selectedKey}){' '}
+                          {question.options.find((o) => o.key === m.selectedKey)?.textIt ?? '—'}
+                        </Text>
+                        <Text fontSize="sm" color="green.500" mt={2} fontWeight="600">
+                          Верно: {question.correctKey}) {question.correctTextIt}
+                        </Text>
+                        <Text fontSize="sm" color={muted} mt={1}>
+                          Перевод: {question.answerTranslationRu}
+                        </Text>
+                        <List spacing={1} mt={3}>
+                          {question.explanation.map((line, i) => (
+                            <ListItem key={i} fontSize="sm" color={muted}>
+                              {line}
+                            </ListItem>
+                          ))}
+                        </List>
+                      </Box>
+                    )
+                  })}
+                </VStack>
+              </ModalBody>
+            </ModalContent>
+          </Modal>
         </Container>
       </Box>
     )
@@ -173,9 +338,16 @@ const MedicinaTestPage = () => {
                   К карточкам
                 </Button>
               </HStack>
-              <Badge colorScheme="teal" fontSize="sm" px={2} py={1}>
-                {index + 1} / {questions.length}
-              </Badge>
+              <HStack>
+                {mode === 'mistakes' ? (
+                  <Badge colorScheme="purple" fontSize="sm" px={2} py={1}>
+                    Ошибки
+                  </Badge>
+                ) : null}
+                <Badge colorScheme="teal" fontSize="sm" px={2} py={1}>
+                  {index + 1} / {activeQuestions.length}
+                </Badge>
+              </HStack>
             </HStack>
             <Text fontSize="xs" color={muted} noOfLines={2}>
               {deck.title}
@@ -183,7 +355,7 @@ const MedicinaTestPage = () => {
           </VStack>
 
           <Progress
-            value={((index + (answered ? 1 : 0)) / questions.length) * 100}
+            value={((index + (answered ? 1 : 0)) / activeQuestions.length) * 100}
             size="sm"
             colorScheme="teal"
             borderRadius="full"

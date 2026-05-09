@@ -30,10 +30,14 @@ import {
   medicinaCardsPath,
   medicinaGlossaryPath,
 } from '../../utils/medicinaDecks'
+import { MEDICINA_PROGRESS_ROUTE } from '../../utils/consts'
+import { useProgress } from '../../progress/ProgressContext'
 import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const MedicinaHubPage = () => {
   const [viewport, setViewport] = useState('grid')
+  const { profile, getGlobalStats, getDeckStats } = useProgress()
+  const global = getGlobalStats()
   const cardBg = useColorModeValue('white', 'gray.800')
   const borderColor = useColorModeValue('gray.200', 'gray.600')
   const textColor = useColorModeValue('gray.600', 'gray.300')
@@ -46,6 +50,28 @@ const MedicinaHubPage = () => {
       <Container maxW="4xl">
         <VStack spacing={8} align="stretch">
           <MedicinaBreadcrumbs current="hub" />
+          <Box
+            p={4}
+            bg={cardBg}
+            borderWidth="1px"
+            borderColor={borderColor}
+            borderRadius="xl"
+          >
+            <HStack justify="space-between" flexWrap="wrap" spacing={3}>
+              <VStack align="start" spacing={1}>
+                <Text fontSize="sm" fontWeight="600" color={headingColor}>
+                  {profile?.name ? `Профиль: ${profile.name}` : 'Локальный профиль'}
+                </Text>
+                <Text fontSize="xs" color={textColor}>
+                  Ответов: {global.totalAnswered} · Верно: {global.totalCorrect} · Сессий:{' '}
+                  {global.sessionsCount}
+                </Text>
+              </VStack>
+              <Button as={RouterLink} to={MEDICINA_PROGRESS_ROUTE} colorScheme="teal" size="sm">
+                Мой прогресс
+              </Button>
+            </HStack>
+          </Box>
           <VStack spacing={3} textAlign="center">
             <Heading
               as="h1"
@@ -93,49 +119,70 @@ const MedicinaHubPage = () => {
                         <Heading size="md" color={headingColor} lineHeight="short">
                           {deck.title}
                         </Heading>
-                        <Badge colorScheme="teal" fontSize="sm">
-                          {deck.questions.length}
-                        </Badge>
+                        <HStack>
+                          {getDeckStats(deck.id).mistakesCount > 0 ? (
+                            <Badge colorScheme="red" fontSize="sm">
+                              Ошибок: {getDeckStats(deck.id).mistakesCount}
+                            </Badge>
+                          ) : null}
+                          <Badge colorScheme="teal" fontSize="sm">
+                            {deck.questions.length}
+                          </Badge>
+                        </HStack>
                       </HStack>
                       <Text fontSize="sm" color={textColor}>
                         {deck.sourceLocale} → {deck.translationLocale} · scelta multipla
                       </Text>
-                      <HStack spacing={3} flexWrap="wrap">
-                        <Button
-                          as={RouterLink}
-                          to={medicinaTestPath(deck.id)}
-                          colorScheme="teal"
-                          size="md"
-                          leftIcon={<Icon as={FaClipboardList} />}
-                          flex="1"
-                          minW="120px"
-                        >
-                          Тест
-                        </Button>
-                        <Button
-                          as={RouterLink}
-                          to={medicinaCardsPath(deck.id)}
-                          variant="outline"
-                          colorScheme="teal"
-                          size="md"
-                          leftIcon={<Icon as={FaLayerGroup} />}
-                          flex="1"
-                          minW="120px"
-                        >
-                          Карточки
-                        </Button>
-                        <Button
-                          as={RouterLink}
-                          to={medicinaGlossaryPath(deck.id)}
-                          variant="ghost"
-                          colorScheme="teal"
-                          size="md"
-                          flex="1"
-                          minW="120px"
-                        >
-                          Словарь
-                        </Button>
-                      </HStack>
+                      <VStack align="stretch" spacing={3}>
+                        <HStack spacing={3} flexWrap="wrap">
+                          <Button
+                            as={RouterLink}
+                            to={medicinaTestPath(deck.id)}
+                            colorScheme="teal"
+                            size="md"
+                            leftIcon={<Icon as={FaClipboardList} />}
+                            flex="1"
+                            minW="120px"
+                          >
+                            Тест
+                          </Button>
+                          <Button
+                            as={RouterLink}
+                            to={medicinaCardsPath(deck.id)}
+                            variant="outline"
+                            colorScheme="teal"
+                            size="md"
+                            leftIcon={<Icon as={FaLayerGroup} />}
+                            flex="1"
+                            minW="120px"
+                          >
+                            Карточки
+                          </Button>
+                          <Button
+                            as={RouterLink}
+                            to={medicinaGlossaryPath(deck.id)}
+                            variant="ghost"
+                            colorScheme="teal"
+                            size="md"
+                            flex="1"
+                            minW="120px"
+                          >
+                            Словарь
+                          </Button>
+                        </HStack>
+                        {getDeckStats(deck.id).mistakesCount > 0 ? (
+                          <Button
+                            as={RouterLink}
+                            to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                            colorScheme="orange"
+                            variant="outline"
+                            size="md"
+                            w="100%"
+                          >
+                            Повторить ошибки
+                          </Button>
+                        ) : null}
+                      </VStack>
                     </VStack>
                   </CardBody>
                 </Card>
@@ -162,7 +209,16 @@ const MedicinaHubPage = () => {
                       <Td fontWeight="600" color={headingColor} maxW={{ base: '160px', md: 'none' }}>
                         {deck.title}
                       </Td>
-                      <Td isNumeric>{deck.questions.length}</Td>
+                      <Td isNumeric>
+                        <VStack align="end" spacing={1}>
+                          {getDeckStats(deck.id).mistakesCount > 0 ? (
+                            <Badge colorScheme="red" fontSize="xs">
+                              Ошибок: {getDeckStats(deck.id).mistakesCount}
+                            </Badge>
+                          ) : null}
+                          <Text as="span">{deck.questions.length}</Text>
+                        </VStack>
+                      </Td>
                       <Td>
                         <HStack spacing={2} justify="flex-end" flexWrap="wrap">
                           <Button
@@ -191,6 +247,17 @@ const MedicinaHubPage = () => {
                           >
                             Словарь
                           </Button>
+                          {getDeckStats(deck.id).mistakesCount > 0 ? (
+                            <Button
+                              as={RouterLink}
+                              to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                              size="sm"
+                              colorScheme="orange"
+                              variant="outline"
+                            >
+                              Повторить ошибки
+                            </Button>
+                          ) : null}
                         </HStack>
                       </Td>
                     </Tr>

@@ -4,6 +4,7 @@ import Loader from './Layouts/Loader/Loader'
 import { useRoutes } from './routes'
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import { ProgressProvider } from './progress/ProgressContext'
 import "./App.scss";
 
 const AppPage = () => {
@@ -11,11 +12,13 @@ const AppPage = () => {
 
 	return (
 		<BrowserRouter>
-			<div className="wrapper">
-				<Header />
-				<div className="page"><Suspense fallback={<Loader />}>{routes}</Suspense></div>
-				<Footer />
-			</div>
+			<ProgressProvider>
+				<div className="wrapper">
+					<Header />
+					<div className="page"><Suspense fallback={<Loader />}>{routes}</Suspense></div>
+					<Footer />
+				</div>
+			</ProgressProvider>
 		</BrowserRouter>
 	)
 }

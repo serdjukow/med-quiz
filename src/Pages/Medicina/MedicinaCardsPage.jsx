@@ -22,10 +22,12 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { FaRedo } from 'react-icons/fa'
 import { getMedicinaDeck, medicinaTestPath, medicinaGlossaryPath } from '../../utils/medicinaDecks'
 import { MEDICINA_ROUTE } from '../../utils/consts'
+import { useProgress } from '../../progress/ProgressContext'
 import MedicinaBreadcrumbs from './MedicinaBreadcrumbs'
 
 const MedicinaCardsPage = () => {
   const { deckId } = useParams()
+  const { getDeckStats } = useProgress()
   const deck = getMedicinaDeck(deckId)
   const questions = deck?.questions ?? []
 
@@ -77,6 +79,13 @@ const MedicinaCardsPage = () => {
     setFlipped(false)
   }
 
+  const mistakesCount = deck ? getDeckStats(deck.id).mistakesCount : 0
+
+  const restartCards = () => {
+    setI(0)
+    setFlipped(false)
+  }
+
   return (
     <Box pb={{ base: 24, md: 10 }} pt={{ base: 6, md: 10 }} px={{ base: 3, md: 4 }}>
       <Container maxW="560px">
@@ -113,6 +122,23 @@ const MedicinaCardsPage = () => {
               {deck.title}
             </Text>
           </VStack>
+
+          <HStack spacing={2} flexWrap="wrap">
+            <Button size="sm" variant="outline" colorScheme="teal" onClick={restartCards}>
+              Заново
+            </Button>
+            {mistakesCount > 0 ? (
+              <Button
+                as={RouterLink}
+                to={`${medicinaTestPath(deck.id)}?mode=mistakes`}
+                size="sm"
+                colorScheme="orange"
+                variant="solid"
+              >
+                Повторить ошибки
+              </Button>
+            ) : null}
+          </HStack>
 
           <Box
             role="button"

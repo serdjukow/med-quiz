@@ -7,6 +7,7 @@ import {
 	MEDICINA_TEST_ROUTE,
 	MEDICINA_CARDS_ROUTE,
 	MEDICINA_GLOSSARY_ROUTE,
+	MEDICINA_PROGRESS_ROUTE,
 	GET_STARTED_ROUTE,
 	FAQ_ROUTE,
 } from './utils/consts'
@@ -17,6 +18,7 @@ const MedicinaTestPage = lazy(() => import('./Pages/Medicina/MedicinaTestPage'))
 const MedicinaCardsPage = lazy(() => import('./Pages/Medicina/MedicinaCardsPage'))
 const MedicinaGlossaryHubPage = lazy(() => import('./Pages/Medicina/MedicinaGlossaryHubPage'))
 const MedicinaGlossaryPage = lazy(() => import('./Pages/Medicina/MedicinaGlossaryPage'))
+const MedicinaProgressPage = lazy(() => import('./Pages/Medicina/MedicinaProgressPage'))
 const GetStarted = lazy(() => import('./Pages/GetStarted/GetStarted'))
 const FaqPage = lazy(() => import('./Pages/FaqPage/FaqPage'))
 
@@ -27,6 +29,7 @@ export const useRoutes = () => {
 			<Route path={GET_STARTED_ROUTE} element={<GetStarted />} />
 			<Route path={FAQ_ROUTE} element={<FaqPage />} />
 			<Route path={MEDICINA_ROUTE} element={<MedicinaHubPage />} />
+			<Route path={MEDICINA_PROGRESS_ROUTE} element={<MedicinaProgressPage />} />
 
 			<Route
 				path={MEDICINA_TEST_ROUTE}

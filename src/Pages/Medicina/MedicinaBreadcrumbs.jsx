@@ -10,10 +10,11 @@ const labels = {
   test: 'Тест',
   cards: 'Карточки',
   glossary: 'Словарь',
+  progress: 'Мой прогресс',
 }
 
 /**
- * @param {{ deck?: { id: string, title: string } | null, current: 'hub' | 'test' | 'cards' | 'glossary' }} props
+ * @param {{ deck?: { id: string, title: string } | null, current: 'hub' | 'test' | 'cards' | 'glossary' | 'progress' }} props
  */
 const MedicinaBreadcrumbs = ({ deck = null, current }) => {
   const deckLinkTo =
@@ -63,7 +64,22 @@ const MedicinaBreadcrumbs = ({ deck = null, current }) => {
           </>
         )}
 
-        {!deck && current !== 'hub' && (
+        {!deck && current === 'progress' && (
+          <>
+            <BreadcrumbItem>
+              <BreadcrumbLink as={RouterLink} to={MEDICINA_ROUTE}>
+                {labels.hub}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink as="span" cursor="default">
+                {labels.progress}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          </>
+        )}
+
+        {!deck && current !== 'hub' && current !== 'progress' && (
           <BreadcrumbItem isCurrentPage>
             <BreadcrumbLink as="span" cursor="default">
               {labels[current]}

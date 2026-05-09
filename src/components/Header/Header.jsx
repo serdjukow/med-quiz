@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { HOME_ROUTE, APP_NAME } from '../../utils/consts'
+import { HOME_ROUTE, APP_NAME, MEDICINA_PROGRESS_ROUTE } from '../../utils/consts'
+import { useProgress } from '../../progress/ProgressContext'
 import './header.scss'
 import Sidebar from '../../components/Sidebar/Sidebar';
 
@@ -16,6 +17,7 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 
 const Header = () => {
     const { colorMode, toggleColorMode } = useColorMode()
+    const { profile } = useProgress()
 
     return (
         <Box
@@ -47,7 +49,19 @@ const Header = () => {
                 </Link>
 
                 <Flex alignItems={'center'}>
-                    <Stack direction={'row'} spacing={{ base: 4, md: 7 }} gap="3">
+                    <Stack direction={'row'} spacing={{ base: 2, md: 5 }} gap="2" align="center">
+                        <Button
+                            as={Link}
+                            to={MEDICINA_PROGRESS_ROUTE}
+                            variant="ghost"
+                            size={{ base: 'xs', md: 'sm' }}
+                            fontWeight="600"
+                            maxW={{ base: '100px', md: '160px' }}
+                            isTruncated
+                            display={{ base: 'none', sm: 'inline-flex' }}
+                        >
+                            {profile?.name || 'Профиль'}
+                        </Button>
                         <Button
                             onClick={toggleColorMode}
                             _focus={{ outline: "none" }}
