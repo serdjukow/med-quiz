@@ -1,0 +1,1059 @@
+{
+  "id": "medicina-legale-sapienza-2014-2015",
+  "title": "Medicina Legale — Sapienza 2014/2015",
+  "sourceLocale": "it",
+  "translationLocale": "ru",
+  "questions": [
+    {
+      "id": 1,
+      "promptIt": "A chi deve essere presentato il referto?",
+      "promptRu": "Кому должен быть представлен referto?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Alla ASL"
+        },
+        {
+          "key": "b",
+          "textIt": "Al servizio di medicina legale"
+        },
+        {
+          "key": "c",
+          "textIt": "All’Autorità Giudiziaria"
+        },
+        {
+          "key": "d",
+          "textIt": "Alla Direzione Sanitaria dell’Ospedale"
+        },
+        {
+          "key": "e",
+          "textIt": "Al Dirigente del reparto"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "All’Autorità Giudiziaria",
+      "answerTranslationRu": "судебной власти / прокуратуре.",
+      "explanation": [
+        "Referto — это сообщение, которое медицинский работник направляет в Autorità Giudiziaria, если случай может иметь признаки преступления, преследуемого d’ufficio.",
+        "Не подаётся в ASL, отделение или дирекцию больницы как конечный адресат."
+      ]
+    },
+    {
+      "id": 2,
+      "promptIt": "Il codice penale:",
+      "promptRu": "Уголовный кодекс:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Regola i rapporti tra i cittadini"
+        },
+        {
+          "key": "b",
+          "textIt": "Fa parte del Diritto Privato"
+        },
+        {
+          "key": "c",
+          "textIt": "Nessuna risposta è esatta"
+        },
+        {
+          "key": "d",
+          "textIt": "Fa parte del Diritto Pubblico"
+        },
+        {
+          "key": "e",
+          "textIt": "Punisce i delitti volontari"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Fa parte del Diritto Pubblico",
+      "answerTranslationRu": "является частью публичного права.",
+      "explanation": [
+        "Уголовное право относится к diritto pubblico, потому что регулирует отношения между государством и лицом, совершившим преступление.",
+        "Частное право регулирует отношения между частными лицами."
+      ]
+    },
+    {
+      "id": 3,
+      "promptIt": "Per danno biologico si intende:",
+      "promptRu": "Под биологическим вредом понимается:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Il danno alla capacità lavorativa del soggetto"
+        },
+        {
+          "key": "b",
+          "textIt": "La lesione/menomazione dell’integrità psicofisica in quanto tale"
+        },
+        {
+          "key": "c",
+          "textIt": "Il danno extrapatrimoniale"
+        },
+        {
+          "key": "d",
+          "textIt": "Solo il danno alla vita di relazione"
+        },
+        {
+          "key": "e",
+          "textIt": "Qualsiasi tipo di danno"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "La lesione/menomazione dell’integrità psicofisica in quanto tale",
+      "answerTranslationRu": "повреждение или уменьшение психофизической целостности как таковой.",
+      "explanation": [
+        "Danno biologico = вред здоровью человека: телесному и психическому.",
+        "Он не равен потере заработка, имущественному вреду или просто «любому вреду».",
+        "Ключ: вред здоровью сам по себе."
+      ]
+    },
+    {
+      "id": 4,
+      "promptIt": "Quando va presentato il referto?",
+      "promptRu": "Когда должен быть представлен referto?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "A richiesta dell’interessato"
+        },
+        {
+          "key": "b",
+          "textIt": "Nei casi di delitto perseguibile a querela di parte"
+        },
+        {
+          "key": "c",
+          "textIt": "Quando si abbia prestato la propria opera o assistenza in casi di delitto perseguibile d’ufficio"
+        },
+        {
+          "key": "d",
+          "textIt": "Sempre"
+        },
+        {
+          "key": "e",
+          "textIt": "Quando vi sia un decesso"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Quando si abbia prestato la propria opera o assistenza in casi di delitto perseguibile d’ufficio",
+      "answerTranslationRu": "когда медицинский работник оказал помощь или работу в случае преступления, преследуемого по инициативе государства.",
+      "explanation": [
+        "Обязанность referto возникает при delitto perseguibile d’ufficio.",
+        "Не при каждом пациенте, не по просьбе пациента и не только при смерти.",
+        "При querela di parte referto обычно не обязателен."
+      ]
+    },
+    {
+      "id": 5,
+      "promptIt": "L’igienista dentale è:",
+      "promptRu": "Зубной гигиенист является:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Un medico specializzato in igiene della bocca e dei denti"
+        },
+        {
+          "key": "b",
+          "textIt": "Un collaboratore di studio dell’odontoiatra"
+        },
+        {
+          "key": "c",
+          "textIt": "Nessuna delle risposte è esatta"
+        },
+        {
+          "key": "d",
+          "textIt": "Un esercente una specifica professione sanitaria"
+        },
+        {
+          "key": "e",
+          "textIt": "Un’arte sanitaria come l’odontotecnico"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Un esercente una specifica professione sanitaria",
+      "answerTranslationRu": "представителем отдельной медицинской профессии.",
+      "explanation": [
+        "Igienista dentale — это самостоятельная regulated professione sanitaria.",
+        "Он не является врачом-стоматологом, но и не просто помощником кабинета.",
+        "Не путать с odontotecnico."
+      ]
+    },
+    {
+      "id": 6,
+      "promptIt": "Non è necessario il consenso del paziente:",
+      "promptRu": "Согласие пациента не требуется:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Se l’intervento è programmato"
+        },
+        {
+          "key": "b",
+          "textIt": "Se l’intervento non è urgente"
+        },
+        {
+          "key": "c",
+          "textIt": "Se vi è pericolo di vita"
+        },
+        {
+          "key": "d",
+          "textIt": "Se l’intervento sanitario non è chirurgico"
+        },
+        {
+          "key": "e",
+          "textIt": "Se non è necessario il ricovero"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Se vi è pericolo di vita",
+      "answerTranslationRu": "если существует опасность для жизни.",
+      "explanation": [
+        "В экстренной ситуации, когда есть pericolo di vita и получить согласие невозможно, врач может действовать без предварительного согласия.",
+        "Не-хирургический характер процедуры или отсутствие госпитализации не отменяют необходимость consent."
+      ]
+    },
+    {
+      "id": 7,
+      "promptIt": "Gli apparecchi ortodontici e protesici sono considerati:",
+      "promptRu": "Ортодонтические и протезные аппараты считаются:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Prodotti farmaceutici"
+        },
+        {
+          "key": "b",
+          "textIt": "Dispositivi fabbricati in proprio dall’odontoiatra nel proprio studio"
+        },
+        {
+          "key": "c",
+          "textIt": "Prodotti vendibili nelle parafarmacie"
+        },
+        {
+          "key": "d",
+          "textIt": "Prodotti industriali"
+        },
+        {
+          "key": "e",
+          "textIt": "Dispositivi medici su misura realizzati su prescrizione"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Dispositivi medici su misura realizzati su prescrizione",
+      "answerTranslationRu": "медицинские изделия, изготовленные индивидуально по назначению.",
+      "explanation": [
+        "Ортодонтические и протезные аппараты изготавливаются для конкретного пациента.",
+        "Это dispositivi medici su misura, а не фармпродукты, не промышленные товары и не изделия свободной продажи."
+      ]
+    },
+    {
+      "id": 8,
+      "promptIt": "La capacità di agire:",
+      "promptRu": "Дееспособность:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Si perde negli stati d’incoscienza"
+        },
+        {
+          "key": "b",
+          "textIt": "Una volta acquisita non viene mai persa"
+        },
+        {
+          "key": "c",
+          "textIt": "Si acquisisce alla maggiore età"
+        },
+        {
+          "key": "d",
+          "textIt": "Nessuna delle risposte è vera"
+        },
+        {
+          "key": "e",
+          "textIt": "Si acquisisce alla nascita"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Si acquisisce alla maggiore età",
+      "answerTranslationRu": "приобретается с совершеннолетием.",
+      "explanation": [
+        "Capacità di agire = способность самостоятельно совершать юридически значимые действия.",
+        "Она приобретается с maggiore età, то есть с 18 лет.",
+        "Не путать с capacità giuridica, которая возникает с рождения."
+      ]
+    },
+    {
+      "id": 9,
+      "promptIt": "Si definisce lesione personale grave e non gravissima:",
+      "promptRu": "Тяжким, но не особо тяжким телесным повреждением считается:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Una malattia o l’incapacità di attendere alle ordinarie occupazioni per un tempo superiore ai 40 giorni"
+        },
+        {
+          "key": "b",
+          "textIt": "La perdita di un senso"
+        },
+        {
+          "key": "c",
+          "textIt": "Una malattia certamente o probabilmente insanabile"
+        },
+        {
+          "key": "d",
+          "textIt": "La perdita dell’uso di un organo"
+        },
+        {
+          "key": "e",
+          "textIt": "La perdita della capacità di procreare"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Una malattia o l’incapacità di attendere alle ordinarie occupazioni per un tempo superiore ai 40 giorni",
+      "answerTranslationRu": "болезнь или неспособность выполнять обычные занятия более 40 дней.",
+      "explanation": [
+        "Lesione grave = болезнь или неспособность к обычным занятиям более 40 дней.",
+        "Потеря чувства, неизлечимая болезнь, потеря способности к деторождению — это признаки gravissima."
+      ]
+    },
+    {
+      "id": 10,
+      "promptIt": "La capacità giuridica si acquista:",
+      "promptRu": "Правоспособность приобретается:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "A 21 anni"
+        },
+        {
+          "key": "b",
+          "textIt": "Quando si è in grado di valutare un danno alla persona"
+        },
+        {
+          "key": "c",
+          "textIt": "Con l’abilitazione professionale all’esercizio della professione forense"
+        },
+        {
+          "key": "d",
+          "textIt": "A 18 anni"
+        },
+        {
+          "key": "e",
+          "textIt": "Alla nascita"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Alla nascita",
+      "answerTranslationRu": "с рождения.",
+      "explanation": [
+        "Capacità giuridica = способность быть носителем прав и обязанностей.",
+        "Она возникает alla nascita.",
+        "С 18 лет приобретается другая категория — capacità di agire."
+      ]
+    },
+    {
+      "id": 11,
+      "promptIt": "La responsabilità professionale colposa si verifica:",
+      "promptRu": "Профессиональная ответственность по неосторожности возникает:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Per negligenza ed imperizia"
+        },
+        {
+          "key": "b",
+          "textIt": "Per negligenza"
+        },
+        {
+          "key": "c",
+          "textIt": "Per imprudenza"
+        },
+        {
+          "key": "d",
+          "textIt": "Per negligenza, imperizia, imprudenza e inosservanza di leggi, regolamenti, ordini o discipline"
+        },
+        {
+          "key": "e",
+          "textIt": "Quando non si rispettano i regolamenti ospedalieri"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Per negligenza, imperizia, imprudenza e inosservanza di leggi, regolamenti, ordini o discipline",
+      "answerTranslationRu": "из-за небрежности, неумения, неосторожности и нарушения законов, правил, приказов или дисциплин.",
+      "explanation": [
+        "Colpa professionale включает:",
+        "negligenza = невнимательность;",
+        "imperizia = недостаток профессиональных навыков;",
+        "imprudenza = рискованность;",
+        "inosservanza = нарушение норм и правил.",
+        "Ответы с «только» неполные."
+      ]
+    },
+    {
+      "id": 12,
+      "promptIt": "Secondo l’art. 85 CP è imputabile:",
+      "promptRu": "Согласно статье 85 Уголовного кодекса, вменяемым является:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Colui che ha commesso il fatto in stato d’ira"
+        },
+        {
+          "key": "b",
+          "textIt": "Colui che nel momento in cui ha commesso il fatto aveva capacità di intendere e di volere"
+        },
+        {
+          "key": "c",
+          "textIt": "Colui che nel momento in cui ha commesso il fatto era per infermità in tale stato di mente da escludere la capacità di intendere"
+        },
+        {
+          "key": "d",
+          "textIt": "Colui che non è affetto da sordomutismo e/o da cecità"
+        },
+        {
+          "key": "e",
+          "textIt": "Colui il quale non era inabilitato"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Colui che nel momento in cui ha commesso il fatto aveva capacità di intendere e di volere",
+      "answerTranslationRu": "тот, кто в момент совершения деяния имел способность понимать и желать/контролировать свои действия.",
+      "explanation": [
+        "Imputabilità по art. 85 c.p. основана на capacità di intendere e di volere.",
+        "Важно именно состояние в момент совершения факта.",
+        "Гнев, отсутствие инвалидности или отсутствие глухонемоты сами по себе не являются критерием."
+      ]
+    },
+    {
+      "id": 13,
+      "promptIt": "La perdita di un piede costituisce:",
+      "promptRu": "Потеря стопы представляет собой:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Una malattia certamente insanabile"
+        },
+        {
+          "key": "b",
+          "textIt": "La perdita dell’uso di un organo"
+        },
+        {
+          "key": "c",
+          "textIt": "Una mutilazione che rende l’arto inservibile"
+        },
+        {
+          "key": "d",
+          "textIt": "La perdita di un arto"
+        },
+        {
+          "key": "e",
+          "textIt": "Un indebolimento permanente di un organo"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Una mutilazione che rende l’arto inservibile",
+      "answerTranslationRu": "увечье, делающее конечность непригодной к использованию.",
+      "explanation": [
+        "Потеря стопы делает нижнюю конечность функционально непригодной или резко нарушает её функцию.",
+        "Поэтому классифицируется как mutilazione che rende l’arto inservibile.",
+        "Это серьёзное последствие в рамках lesioni personali."
+      ]
+    },
+    {
+      "id": 14,
+      "promptIt": "Nel delitto doloso:",
+      "promptRu": "При умышленном преступлении:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "L’azione è cosciente e voluta ma l’evento non è voluto"
+        },
+        {
+          "key": "b",
+          "textIt": "L’azione è voluta ma l’evento preveduto in forma meno grave di quella verificatasi"
+        },
+        {
+          "key": "c",
+          "textIt": "L’azione è cosciente e voluta pur se non voluto era prevedibile"
+        },
+        {
+          "key": "d",
+          "textIt": "L’azione è cosciente e voluta e l’evento è preveduto e voluto"
+        },
+        {
+          "key": "e",
+          "textIt": "L’azione è sempre premeditata"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "L’azione è cosciente e voluta e l’evento è preveduto e voluto",
+      "answerTranslationRu": "действие осознанное и желаемое, и результат предвиден и желаем.",
+      "explanation": [
+        "Dolo = coscienza + volontà.",
+        "Субъект осознаёт действие, предвидит результат и хочет его.",
+        "Premeditazione не обязательна для dolo: это отдельный более специфический элемент."
+      ]
+    },
+    {
+      "id": 15,
+      "promptIt": "Quando può non essere presentato il referto?",
+      "promptRu": "Когда referto может не подаваться?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "In caso di omicidio colposo"
+        },
+        {
+          "key": "b",
+          "textIt": "Nei casi perseguibili d’ufficio se si espone la persona assistita a procedimento penale"
+        },
+        {
+          "key": "c",
+          "textIt": "A richiesta dell’interessato"
+        },
+        {
+          "key": "d",
+          "textIt": "Nei casi che riguardino un cittadino straniero"
+        },
+        {
+          "key": "e",
+          "textIt": "Nel caso del delitto di lesione personale colposa"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Nei casi perseguibili d’ufficio se si espone la persona assistita a procedimento penale",
+      "answerTranslationRu": "в случаях, преследуемых d’ufficio, если referto подверг бы пациента уголовному преследованию.",
+      "explanation": [
+        "Это главное исключение из обязанности referto.",
+        "Врач обычно обязан сообщать о delitto perseguibile d’ufficio, но может не делать referto, если этим подвергает собственного пациента уголовному делу.",
+        "Просьба пациента или иностранное гражданство значения не имеют."
+      ]
+    },
+    {
+      "id": 16,
+      "promptIt": "Un giovane di 16 anni è imputabile?",
+      "promptRu": "Является ли 16-летний человек вменяемым?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Solo se di sesso maschile"
+        },
+        {
+          "key": "b",
+          "textIt": "Mai"
+        },
+        {
+          "key": "c",
+          "textIt": "Sempre"
+        },
+        {
+          "key": "d",
+          "textIt": "Solo se si dimostra la sua capacità di intendere o di volere"
+        },
+        {
+          "key": "e",
+          "textIt": "Solo nel caso che abbia agito con premeditazione"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Solo se si dimostra la sua capacità di intendere o di volere",
+      "answerTranslationRu": "только если доказана его способность понимать и желать/контролировать свои действия.",
+      "explanation": [
+        "Возраст 16 лет входит в категорию 14–18 anni.",
+        "В этом возрасте imputabilità не автоматическая: нужно установить capacità di intendere e di volere.",
+        "До 14 лет imputabilità нет."
+      ]
+    },
+    {
+      "id": 17,
+      "promptIt": "In quale dei seguenti casi la lesione personale è gravissima?",
+      "promptRu": "В каком из следующих случаев телесное повреждение является особо тяжким?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Se dal fatto deriva un indebolimento permanente di un senso"
+        },
+        {
+          "key": "b",
+          "textIt": "Se dal fatto deriva una malattia di durata superiore a 40 giorni"
+        },
+        {
+          "key": "c",
+          "textIt": "Se il fatto produce indebolimento permanente di un organo"
+        },
+        {
+          "key": "d",
+          "textIt": "Se dal fatto deriva una malattia certamente o probabilmente insanabile"
+        },
+        {
+          "key": "e",
+          "textIt": "Se dal fatto deriva una malattia che mette in pericolo la vita della persona offesa"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Se dal fatto deriva una malattia certamente o probabilmente insanabile",
+      "answerTranslationRu": "если вследствие деяния возникает болезнь, точно или вероятно неизлечимая.",
+      "explanation": [
+        "Malattia certamente o probabilmente insanabile — классический признак lesione gravissima.",
+        "Болезнь более 40 дней и опасность для жизни относятся к grave в этих тестах.",
+        "Indebolimento permanente обычно тоже относится к aggravanti gravi, а не gravissime."
+      ]
+    },
+    {
+      "id": 18,
+      "promptIt": "Nell’ambito della colpa generica, imperizia significa:",
+      "promptRu": "В рамках общей неосторожности imperizia означает:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Svogliatezza e leggerezza"
+        },
+        {
+          "key": "b",
+          "textIt": "Carenza della preparazione tecnica adeguata e necessaria"
+        },
+        {
+          "key": "c",
+          "textIt": "Disattenzione e dimenticanza"
+        },
+        {
+          "key": "d",
+          "textIt": "Avventatezza"
+        },
+        {
+          "key": "e",
+          "textIt": "Superficialità e carenza di sollecitudine"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Carenza della preparazione tecnica adeguata e necessaria",
+      "answerTranslationRu": "недостаток адекватной и необходимой технической подготовки.",
+      "explanation": [
+        "Imperizia = профессиональная некомпетентность, отсутствие нужных технических знаний или навыков.",
+        "Отличать:",
+        "negligenza = невнимательность;",
+        "imprudenza = рискованность;",
+        "imperizia = неумение."
+      ]
+    },
+    {
+      "id": 19,
+      "promptIt": "Il referto deve essere inoltrato all’Autorità Giudiziaria:",
+      "promptRu": "Referto должен быть направлен судебной власти:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nessuna delle risposte è esatta"
+        },
+        {
+          "key": "b",
+          "textIt": "Sempre immediatamente"
+        },
+        {
+          "key": "c",
+          "textIt": "Entro 24 ore"
+        },
+        {
+          "key": "d",
+          "textIt": "Entro 48 ore o immediatamente se vi è pericolo nel ritardo"
+        },
+        {
+          "key": "e",
+          "textIt": "Entro 12 ore quando vi è pericolo nel ritardo"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Entro 48 ore o immediatamente se vi è pericolo nel ritardo",
+      "answerTranslationRu": "в течение 48 часов или немедленно, если задержка опасна.",
+      "explanation": [
+        "Стандартный срок — 48 ore.",
+        "Если промедление может быть опасным для расследования или правосудия, referto направляется сразу.",
+        "Это один из самых повторяемых вопросов."
+      ]
+    },
+    {
+      "id": 20,
+      "promptIt": "Quale elemento è estraneo al delitto di percosse (art. 581 c.p.)?",
+      "promptRu": "Какой элемент не относится к преступлению побоев по ст. 581 УК?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "La procedibilità a querela della persona offesa"
+        },
+        {
+          "key": "b",
+          "textIt": "L’assenza di malattia nel corpo o nella mente"
+        },
+        {
+          "key": "c",
+          "textIt": "La colpa"
+        },
+        {
+          "key": "d",
+          "textIt": "L’azione commissiva"
+        },
+        {
+          "key": "e",
+          "textIt": "Il dolo"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "La colpa",
+      "answerTranslationRu": "неосторожность.",
+      "explanation": [
+        "Percosse — это умышленное преступление.",
+        "Для percosse характерно:",
+        "действие причиняет физическое воздействие;",
+        "нет malattia nel corpo o nella mente;",
+        "обычно procedibilità a querela.",
+        "Colpa не является элементом percosse."
+      ]
+    },
+    {
+      "id": 21,
+      "promptIt": "La causa può essere definita come l’antecedente:",
+      "promptRu": "Причина может быть определена как предшествующий фактор:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Occasionale a produrre l’effetto"
+        },
+        {
+          "key": "b",
+          "textIt": "Necessario e sufficiente a produrre l’effetto"
+        },
+        {
+          "key": "c",
+          "textIt": "Non necessario ma sufficiente a produrre l’effetto"
+        },
+        {
+          "key": "d",
+          "textIt": "Condizionale a produrre l’effetto"
+        },
+        {
+          "key": "e",
+          "textIt": "Necessario ma non sufficiente a produrre l’effetto"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Necessario e sufficiente a produrre l’effetto",
+      "answerTranslationRu": "необходимый и достаточный для возникновения результата.",
+      "explanation": [
+        "В medico-legale логике причина — это фактор, без которого результат не наступил бы и который способен вызвать этот результат.",
+        "Формула: causa = antecedente necessario e sufficiente."
+      ]
+    },
+    {
+      "id": 22,
+      "promptIt": "Chi è tenuto al rispetto del segreto professionale?",
+      "promptRu": "Кто обязан соблюдать профессиональную тайну?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Soltanto i pubblici ufficiali"
+        },
+        {
+          "key": "b",
+          "textIt": "Soltanto gli incaricati di pubblico servizio"
+        },
+        {
+          "key": "c",
+          "textIt": "I ministri del clero"
+        },
+        {
+          "key": "d",
+          "textIt": "Chi ne ha avuto notizia per il proprio stato, ufficio, professione o arte"
+        },
+        {
+          "key": "e",
+          "textIt": "Soltanto i medici e gli avvocati"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Chi ne ha avuto notizia per il proprio stato, ufficio, professione o arte",
+      "answerTranslationRu": "тот, кто узнал тайну в силу своего статуса, должности, профессии или ремесла.",
+      "explanation": [
+        "Обязанность хранить профессиональную тайну шире, чем только врачи или public officials.",
+        "Она касается всех, кто получил сведения благодаря профессиональному положению."
+      ]
+    },
+    {
+      "id": 23,
+      "promptIt": "Il “danno biologico”:",
+      "promptRu": "«Биологический вред»:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "È il danneggiamento della cellula ad opera dei radicali liberi"
+        },
+        {
+          "key": "b",
+          "textIt": "Identifica qualsiasi forma di danno a cose"
+        },
+        {
+          "key": "c",
+          "textIt": "È qualsiasi danno alla persona suscettibile di valutazione medico-legale"
+        },
+        {
+          "key": "d",
+          "textIt": "Corrisponde al danno alla capacità di lavoro del soggetto danneggiato"
+        },
+        {
+          "key": "e",
+          "textIt": "È un sinonimo del danno estetico"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "È qualsiasi danno alla persona suscettibile di valutazione medico-legale",
+      "answerTranslationRu": "это любой вред личности, подлежащий медико-правовой оценке.",
+      "explanation": [
+        "Danno biologico — вред человеку и его психофизической целостности, который можно оценить medico-legalmente.",
+        "Не относится к вещам, клеткам в биохимическом смысле или только эстетике."
+      ]
+    },
+    {
+      "id": 24,
+      "promptIt": "Con una malattia guarita in 20 giorni la lesione personale è:",
+      "promptRu": "Если болезнь вылечилась за 20 дней, телесное повреждение является:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Grave"
+        },
+        {
+          "key": "b",
+          "textIt": "Lievissima"
+        },
+        {
+          "key": "c",
+          "textIt": "Lieve"
+        },
+        {
+          "key": "d",
+          "textIt": "Lieve o lievissima a seconda del mezzo adoperato"
+        },
+        {
+          "key": "e",
+          "textIt": "Gravissima"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Lievissima",
+      "answerTranslationRu": "очень лёгким.",
+      "explanation": [
+        "В этих тестах используется шкала:",
+        "lievissima → до/около 20 дней;",
+        "lieve → 20–40 дней;",
+        "grave → более 40 дней;",
+        "gravissima → утрата органа/чувства, неизлечимая болезнь, постоянное обезображивание лица.",
+        "20 дней = lievissima."
+      ]
+    },
+    {
+      "id": 25,
+      "promptIt": "Per organo in medicina legale si intende:",
+      "promptRu": "Под органом в судебной медицине понимается:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Un solo organo in caso di organi pari"
+        },
+        {
+          "key": "b",
+          "textIt": "Un organo parenchimatoso"
+        },
+        {
+          "key": "c",
+          "textIt": "L’insieme delle parti anatomiche che servono a espletare una funzione determinata"
+        },
+        {
+          "key": "d",
+          "textIt": "L’insieme di organi impari"
+        },
+        {
+          "key": "e",
+          "textIt": "Una entità anatomica singola"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "L’insieme delle parti anatomiche che servono a espletare una funzione determinata",
+      "answerTranslationRu": "совокупность анатомических частей, служащих для выполнения определённой функции.",
+      "explanation": [
+        "В medicina legale орган понимается функционально.",
+        "Это не обязательно один анатомический объект.",
+        "Например, зубной аппарат может рассматриваться как орган жевательной функции."
+      ]
+    },
+    {
+      "id": 26,
+      "promptIt": "A chi spetta fare il referto?",
+      "promptRu": "Кто должен составлять referto?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Solo ai medici, agli odontoiatri, ai veterinari ed ai farmacisti"
+        },
+        {
+          "key": "b",
+          "textIt": "Solo ai medici curanti"
+        },
+        {
+          "key": "c",
+          "textIt": "Ad ogni esercente una professione sanitaria"
+        },
+        {
+          "key": "d",
+          "textIt": "Solo ai medici"
+        },
+        {
+          "key": "e",
+          "textIt": "Al personale sanitario ospedaliero"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Ad ogni esercente una professione sanitaria",
+      "answerTranslationRu": "каждому представителю медицинской профессии.",
+      "explanation": [
+        "Обязанность referto распространяется на всех esercenti una professione sanitaria, а не только на врачей или больничный персонал.",
+        "Условие — оказание помощи в случае возможного delitto perseguibile d’ufficio."
+      ]
+    },
+    {
+      "id": 27,
+      "promptIt": "Il referto all’autorità giudiziaria si deve redigere:",
+      "promptRu": "Referto судебной власти должен составляться:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Solo se lo richiede la persona assistita"
+        },
+        {
+          "key": "b",
+          "textIt": "Se il caso presenta il carattere di un delitto perseguibile a querela"
+        },
+        {
+          "key": "c",
+          "textIt": "Sempre e comunque in presenza di paziente leso"
+        },
+        {
+          "key": "d",
+          "textIt": "Se il caso presenta il carattere di un delitto perseguibile d’ufficio"
+        },
+        {
+          "key": "e",
+          "textIt": "Solo se il professionista è un dipendente dell’ospedale"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Se il caso presenta il carattere di un delitto perseguibile d’ufficio",
+      "answerTranslationRu": "если случай имеет признаки преступления, преследуемого по инициативе государства.",
+      "explanation": [
+        "Referto обязателен при reato/delitto perseguibile d’ufficio.",
+        "Не по просьбе пациента, не при любом пострадавшем и не только для сотрудников больницы."
+      ]
+    },
+    {
+      "id": 28,
+      "promptIt": "In quali casi è necessario accertare l’imputabilità?",
+      "promptRu": "В каких случаях необходимо установить вменяемость?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nessuna delle risposte è esatta"
+        },
+        {
+          "key": "b",
+          "textIt": "Se il soggetto è minore di 14 anni"
+        },
+        {
+          "key": "c",
+          "textIt": "Se il soggetto è minore di 18 anni"
+        },
+        {
+          "key": "d",
+          "textIt": "Se il soggetto è maggiore di 14 anni e minore di 18"
+        },
+        {
+          "key": "e",
+          "textIt": "Se il soggetto ha compiuto 18 anni ma ha uno sviluppo fisico inadeguato"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Se il soggetto è maggiore di 14 anni e minore di 18",
+      "answerTranslationRu": "если субъект старше 14 лет и младше 18 лет.",
+      "explanation": [
+        "До 14 лет imputabilità исключена.",
+        "Между 14 и 18 годами нужно проверять capacità di intendere e di volere.",
+        "После 18 лет действует презумпция imputabilità, если нет доказательств психического нарушения."
+      ]
+    },
+    {
+      "id": 29,
+      "promptIt": "Quando si deve rivelare il segreto professionale?",
+      "promptRu": "Когда необходимо раскрыть профессиональную тайну?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Quando il paziente ha compiuto un reato"
+        },
+        {
+          "key": "b",
+          "textIt": "In seguito alla morte dell’interessato"
+        },
+        {
+          "key": "c",
+          "textIt": "Su richiesta di un procuratore legale"
+        },
+        {
+          "key": "d",
+          "textIt": "Mai"
+        },
+        {
+          "key": "e",
+          "textIt": "Per obbligo di legge"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Per obbligo di legge",
+      "answerTranslationRu": "по обязанности, установленной законом.",
+      "explanation": [
+        "Профессиональная тайна может быть раскрыта, когда существует obbligo di legge.",
+        "Пример: referto, обязательные сертификаты, законные сообщения.",
+        "Сам факт преступления пациента или смерть не всегда автоматически разрешают раскрытие тайны."
+      ]
+    },
+    {
+      "id": 30,
+      "promptIt": "Le norme deontologiche:",
+      "promptRu": "Деонтологические нормы:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Sono norme etiche approvate che regolano l’attività professionale"
+        },
+        {
+          "key": "b",
+          "textIt": "Sono leggi specifiche di ogni nazione riguardanti le professioni sanitarie"
+        },
+        {
+          "key": "c",
+          "textIt": "Sono norme dell’ordine dei medici"
+        },
+        {
+          "key": "d",
+          "textIt": "Sono consuetudini delle singole professioni"
+        },
+        {
+          "key": "e",
+          "textIt": "Nessuna delle risposte è esatta"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Sono norme etiche approvate che regolano l’attività professionale",
+      "answerTranslationRu": "это утверждённые этические нормы, регулирующие профессиональную деятельность.",
+      "explanation": [
+        "Norme deontologiche регулируют правильное профессиональное поведение.",
+        "Они утверждаются профессиональными органами и обязательны для членов профессии.",
+        "Это не просто обычай и не обычный государственный закон."
+      ]
+    }
+  ]
+}

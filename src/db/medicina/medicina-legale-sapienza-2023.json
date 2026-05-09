@@ -1,0 +1,1071 @@
+{
+  "id": "medicina-legale-sapienza-2023",
+  "title": "Medicina Legale — L’Aquila, dicembre 2023",
+  "sourceLocale": "it",
+  "translationLocale": "ru",
+  "questions": [
+    {
+      "id": 1,
+      "promptIt": "È possibile definire la causa come l’antecedente",
+      "promptRu": "Причину можно определить как предшествующий фактор:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Non necessario né sufficiente a produrre l’effetto"
+        },
+        {
+          "key": "b",
+          "textIt": "Condizionale a produrre l’effetto"
+        },
+        {
+          "key": "c",
+          "textIt": "Occasionale a produrre l’effetto"
+        },
+        {
+          "key": "d",
+          "textIt": "Necessario e sufficiente a produrre l’effetto"
+        },
+        {
+          "key": "e",
+          "textIt": "Necessario ma non sufficiente a produrre l’effetto"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Necessario e sufficiente a produrre l’effetto",
+      "answerTranslationRu": "необходимый и достаточный для возникновения результата.",
+      "explanation": [
+        "В medico-legale логике причина — это фактор, без которого результат не наступил бы и который способен вызвать этот результат.",
+        "Формула для экзамена: causa = antecedente necessario e sufficiente."
+      ]
+    },
+    {
+      "id": 2,
+      "promptIt": "Il referto può essere non fatto quando:",
+      "promptRu": "Referto может не составляться, когда:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nei casi che riguardano un maggiorenne"
+        },
+        {
+          "key": "b",
+          "textIt": "In caso di lesioni personali gravissime"
+        },
+        {
+          "key": "c",
+          "textIt": "In un caso perseguibile d’ufficio, quando si esporrebbe la persona assistita a procedimento penale"
+        },
+        {
+          "key": "d",
+          "textIt": "In caso di omicidio plurimo"
+        },
+        {
+          "key": "e",
+          "textIt": "A richiesta del cittadino"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "In un caso perseguibile d’ufficio, quando si esporrebbe la persona assistita a procedimento penale",
+      "answerTranslationRu": "в случае, преследуемом d’ufficio, если referto подверг бы пациента уголовному преследованию.",
+      "explanation": [
+        "Обычно referto обязателен при delitto perseguibile d’ufficio.",
+        "Исключение: если сообщение приведёт к уголовному преследованию самого пациента.",
+        "Это один из самых частых экзаменационных вопросов."
+      ]
+    },
+    {
+      "id": 3,
+      "promptIt": "È l’atto col quale l’esercente una professione sanitaria riferisce all’autorità giudiziaria di avere prestato la propria assistenza od opera in casi che possono presentare i caratteri di un delitto perseguibile d’ufficio:",
+      "promptRu": "Это акт, с помощью которого представитель медицинской профессии сообщает судебной власти, что оказал помощь или работу в случаях, которые могут иметь признаки преступления, преследуемого по инициативе государства:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Lesione"
+        },
+        {
+          "key": "b",
+          "textIt": "TSO"
+        },
+        {
+          "key": "c",
+          "textIt": "Delitto"
+        },
+        {
+          "key": "d",
+          "textIt": "Perizia"
+        },
+        {
+          "key": "e",
+          "textIt": "Referto"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Referto",
+      "answerTranslationRu": "referto, медицинское сообщение судебной власти.",
+      "explanation": [
+        "Referto — юридически значимое сообщение медработника в Autorità Giudiziaria.",
+        "Условия: медицинский работник оказал помощь и случай может быть преступлением perseguibile d’ufficio."
+      ]
+    },
+    {
+      "id": 4,
+      "promptIt": "Quali sono i principi fondamentali cui il medico deve costantemente ispirare l’esercizio della propria professione?",
+      "promptRu": "Какими основными принципами врач должен постоянно руководствоваться в профессиональной деятельности?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Perizia, prudenza e diligenza"
+        },
+        {
+          "key": "b",
+          "textIt": "Etica, deontologia e competenza"
+        },
+        {
+          "key": "c",
+          "textIt": "Prudenza, impegno e conoscenza"
+        },
+        {
+          "key": "d",
+          "textIt": "Competenza, esperienza e costanza"
+        },
+        {
+          "key": "e",
+          "textIt": "Critica, esperienza e diligenza"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Perizia, prudenza e diligenza",
+      "answerTranslationRu": "профессиональная компетентность, осторожность и внимательность.",
+      "explanation": [
+        "Это положительная формула правильного поведения врача.",
+        "Если этих качеств нет, появляются формы colpa:",
+        "отсутствие perizia → imperizia;",
+        "отсутствие prudenza → imprudenza;",
+        "отсутствие diligenza → negligenza."
+      ]
+    },
+    {
+      "id": 5,
+      "promptIt": "“Consiste nella diminuita produttività (incapacità lavorativa specifica) e nel mancato guadagno (incapacità di guadagno) che la persona subisce in conseguenza dell’evento dannoso subito.” Questa è la definizione di quale tipo di danno?",
+      "promptRu": "«Состоит в снижении продуктивности, то есть специфической трудовой неспособности, и в неполученной прибыли, которую человек несёт вследствие вредного события». Это определение какого вида вреда?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Invalidante"
+        },
+        {
+          "key": "b",
+          "textIt": "Biologico"
+        },
+        {
+          "key": "c",
+          "textIt": "Da lucro cessante"
+        },
+        {
+          "key": "d",
+          "textIt": "Emergente"
+        },
+        {
+          "key": "e",
+          "textIt": "Soggettivo"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Da lucro cessante",
+      "answerTranslationRu": "вред в виде упущенной выгоды.",
+      "explanation": [
+        "Lucro cessante = неполученный доход, потеря заработка, снижение способности зарабатывать.",
+        "Не путать с danno emergente: это реальные расходы, например лечение, лекарства, операции."
+      ]
+    },
+    {
+      "id": 6,
+      "promptIt": "Quale di questi mezzi può essere utilizzato per una lesione da arma bianca?",
+      "promptRu": "Какое из этих средств может использоваться для повреждения холодным оружием?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Bastone"
+        },
+        {
+          "key": "b",
+          "textIt": "Frammenti di vetro"
+        },
+        {
+          "key": "c",
+          "textIt": "Automobile"
+        },
+        {
+          "key": "d",
+          "textIt": "Getto di idrante"
+        },
+        {
+          "key": "e",
+          "textIt": "Pistola"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Frammenti di vetro",
+      "answerTranslationRu": "осколки стекла.",
+      "explanation": [
+        "Arma bianca — предмет, который режет или колет без огнестрельного механизма.",
+        "Осколок стекла может вызвать резаную или колото-резаную рану.",
+        "Палка — тупой предмет, пистолет — огнестрельное оружие."
+      ]
+    },
+    {
+      "id": 7,
+      "promptIt": "Quale di queste affermazioni riguardo la causalità nel codice penale è falsa:",
+      "promptRu": "Какое из этих утверждений о причинности в Уголовном кодексе является ложным:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nessuno può essere punito per un fatto previsto dalla legge come reato, se l’evento dannoso o pericoloso da cui dipende l’esistenza del reato, non è conseguenza della sua azione od omissione"
+        },
+        {
+          "key": "b",
+          "textIt": "Tutte le risposte sono corrette"
+        },
+        {
+          "key": "c",
+          "textIt": "Non fermare un evento che si ha l’obbligo giuridico di impedire equivale a cagionarlo"
+        },
+        {
+          "key": "d",
+          "textIt": "Nessuno può essere punito per un’azione od omissione prevista dalla legge come reato, se non l’ha commessa con coscienza e volontà"
+        },
+        {
+          "key": "e",
+          "textIt": "Nelle contravvenzioni ciascuno risponde della propria azione od omissione cosciente e volontaria sia essa dolosa o colposa"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Tutte le risposte sono corrette",
+      "answerTranslationRu": "все ответы верны.",
+      "explanation": [
+        "Вопрос спрашивает, какое утверждение ложное.",
+        "Вариант b является ловушкой: нельзя выбрать «все ответы верны», если нужно найти ложное утверждение.",
+        "Остальные формулировки отражают базовые положения о причинности, действии/бездействии и coscienza e volontà."
+      ]
+    },
+    {
+      "id": 8,
+      "promptIt": "Quale tra questi può essere considerato un “vizio” che va ad invalidare il consenso?",
+      "promptRu": "Что из перечисленного может считаться «пороком», делающим согласие недействительным?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Il consenso firmato da uno solo dei genitori, nel caso di minore età della persona assistita"
+        },
+        {
+          "key": "b",
+          "textIt": "La maggiore età della persona assistita"
+        },
+        {
+          "key": "c",
+          "textIt": "Nessuna risposta è corretta"
+        },
+        {
+          "key": "d",
+          "textIt": "La capacità psichica del paziente"
+        },
+        {
+          "key": "e",
+          "textIt": "La buona fede dei contraenti"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Il consenso firmato da uno solo dei genitori, nel caso di minore età della persona assistita",
+      "answerTranslationRu": "согласие, подписанное только одним родителем, если пациент несовершеннолетний.",
+      "explanation": [
+        "Для несовершеннолетнего согласие обычно требует участия законных представителей.",
+        "Если согласие дано неправильно, оно может быть юридически дефектным.",
+        "Vizio del consenso = дефект согласия: ошибка, принуждение, отсутствие нужного представительства, недостаточная информированность."
+      ]
+    },
+    {
+      "id": 9,
+      "promptIt": "Quale tra questi doveri che riguardano la professione del medico sono dettati dal codice approvato dall’Ordine professionale d’appartenenza?",
+      "promptRu": "Какие обязанности врача устанавливаются кодексом, утверждённым профессиональным Орденом?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Etici"
+        },
+        {
+          "key": "b",
+          "textIt": "Deontologici"
+        },
+        {
+          "key": "c",
+          "textIt": "Legali"
+        },
+        {
+          "key": "d",
+          "textIt": "Giuridici"
+        },
+        {
+          "key": "e",
+          "textIt": "Extra-contrattuali"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Deontologici",
+      "answerTranslationRu": "деонтологические.",
+      "explanation": [
+        "Codice deontologico — профессиональный кодекс поведения, утверждённый Ordine professionale.",
+        "Нарушение может повлечь дисциплинарную ответственность."
+      ]
+    },
+    {
+      "id": 10,
+      "promptIt": "Si parla di imperizia quando:",
+      "promptRu": "Об imperizia говорят, когда:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Si compiono atti che presuppongono la mancata conoscenza di regole tecniche non rispettate, dunque, per ignoranza o inettitudine"
+        },
+        {
+          "key": "b",
+          "textIt": "Viene compiuta un’azione su base preterintenzionale"
+        },
+        {
+          "key": "c",
+          "textIt": "Si verifica una condotta avventata senza ponderazione e valutazione degli interessi altrui"
+        },
+        {
+          "key": "d",
+          "textIt": "Un perito o esperto svolge una consulenza e relativa relazione per contrastare la parte in causa"
+        },
+        {
+          "key": "e",
+          "textIt": "Si manca di attenzione durante il compimento di una attività"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Si compiono atti che presuppongono la mancata conoscenza di regole tecniche non rispettate, dunque, per ignoranza o inettitudine",
+      "answerTranslationRu": "совершаются действия, предполагающие незнание технических правил из-за невежества или неспособности.",
+      "explanation": [
+        "Imperizia = профессиональное неумение, недостаток технической подготовки.",
+        "Отличать:",
+        "negligenza = невнимательность;",
+        "imprudenza = рискованность;",
+        "imperizia = отсутствие компетенции."
+      ]
+    },
+    {
+      "id": 11,
+      "promptIt": "Nel campo medico-legale la causa consiste in:",
+      "promptRu": "В медико-правовой области причина состоит в:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nessuna risposta è corretta"
+        },
+        {
+          "key": "b",
+          "textIt": "Un fatto o un antecedente di rilevanza giuridica"
+        },
+        {
+          "key": "c",
+          "textIt": "Un germe o un’anomalia genetica"
+        },
+        {
+          "key": "d",
+          "textIt": "Un’arma"
+        },
+        {
+          "key": "e",
+          "textIt": "Una sostanza tossica"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Un fatto o un antecedente di rilevanza giuridica",
+      "answerTranslationRu": "факт или предшествующее обстоятельство, имеющее юридическое значение.",
+      "explanation": [
+        "В medicina legale причина — не только биологический фактор.",
+        "Это любой факт/antecedente, который юридически связан с результатом и имеет значение для ответственности."
+      ]
+    },
+    {
+      "id": 12,
+      "promptIt": "Per essere giuridicamente valido il consenso della persona assistita deve qualificarsi come:",
+      "promptRu": "Чтобы согласие пациента было юридически действительным, оно должно быть:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Tutte le risposte sono corrette"
+        },
+        {
+          "key": "b",
+          "textIt": "Cartaceo"
+        },
+        {
+          "key": "c",
+          "textIt": "Psicologico"
+        },
+        {
+          "key": "d",
+          "textIt": "Digitale"
+        },
+        {
+          "key": "e",
+          "textIt": "Immune da vizi"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Immune da vizi",
+      "answerTranslationRu": "свободным от пороков/дефектов.",
+      "explanation": [
+        "Юридически действительное согласие должно быть свободным, информированным и immune da vizi.",
+        "Вариант «tutte» здесь не подходит, потому что согласие не обязано быть именно бумажным, цифровым или «психологическим»."
+      ]
+    },
+    {
+      "id": 13,
+      "promptIt": "Il concorso di cause sopravvenute, secondo l’art. 41 del c.p, se indipendenti dall’azione od omissione del colpevole",
+      "promptRu": "Совокупность последующих причин по ст. 41 УК, если они независимы от действия или бездействия виновного:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento solo se trattasi di eventi colposi"
+        },
+        {
+          "key": "b",
+          "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento"
+        },
+        {
+          "key": "c",
+          "textIt": "Non esclude il rapporto di causalità fra l’azione od omissione e l’evento"
+        },
+        {
+          "key": "d",
+          "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento solo se trattasi di eventi dolosi"
+        },
+        {
+          "key": "e",
+          "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento se il colpevole è soggetto ultrasessantacinquenne"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Non esclude il rapporto di causalità fra l’azione od omissione e l’evento",
+      "answerTranslationRu": "не исключает причинную связь между действием/бездействием и событием.",
+      "explanation": [
+        "Последующие причины обычно не разрывают causalità.",
+        "Если действие виновного запустило причинный процесс, последующее обстоятельство само по себе не освобождает от ответственности."
+      ]
+    },
+    {
+      "id": 14,
+      "promptIt": "Che cosa s’intende per delitto colposo?",
+      "promptRu": "Что понимается под неосторожным преступлением?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Nessuna risposta è corretta"
+        },
+        {
+          "key": "b",
+          "textIt": "Il delitto è colposo, o contro l’intenzione, quando l’evento, anche se previsto, non è voluto da chi agisce e si verifica a causa di negligenza, imprudenza o imperizia, ovvero per inosservanza di leggi, regolamenti, ordini o discipline"
+        },
+        {
+          "key": "c",
+          "textIt": "Il delitto è colposo, o oltre l’intenzione, quando dall’azione od omissione deriva un evento dannoso o pericoloso più grave di quello voluto da chi agisce"
+        },
+        {
+          "key": "d",
+          "textIt": "Il delitto è colposo, o secondo l’intenzione, quando l’evento dannoso o pericoloso è previsto e voluto da chi agisce"
+        },
+        {
+          "key": "e",
+          "textIt": "Il delitto è colposo, o oltre l’intenzione, quando deriva un evento più grave di quello voluto, ma esclusivamente nei reati, non nelle contravvenzioni"
+        }
+      ],
+      "correctKey": "b",
+      "correctTextIt": "Il delitto è colposo, o contro l’intenzione, quando l’evento, anche se previsto, non è voluto…",
+      "answerTranslationRu": "преступление является неосторожным, когда событие, даже если предвидено, не желаемо и происходит из-за небрежности, неосторожности, неумения или нарушения правил.",
+      "explanation": [
+        "Colpa = результат не желаем.",
+        "Причины: negligenza, imprudenza, imperizia, нарушение законов/регламентов/приказов.",
+        "Вариант c описывает preterintenzione, вариант d — dolo."
+      ]
+    },
+    {
+      "id": 15,
+      "promptIt": "Qual è la prima delle fasi che caratterizza solitamente la dinamica di un investimento tipico?",
+      "promptRu": "Какая первая фаза обычно характеризует динамику типичного наезда?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Arrotamento"
+        },
+        {
+          "key": "b",
+          "textIt": "Proiezione"
+        },
+        {
+          "key": "c",
+          "textIt": "Trascinamento"
+        },
+        {
+          "key": "d",
+          "textIt": "Propulsione"
+        },
+        {
+          "key": "e",
+          "textIt": "Urto"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Urto",
+      "answerTranslationRu": "удар.",
+      "explanation": [
+        "Типичная последовательность:",
+        " urto → proiezione → propulsione → arrotamento → trascinamento.",
+        "Первая фаза — urto, то есть первичный удар транспортного средства о тело."
+      ]
+    },
+    {
+      "id": 16,
+      "promptIt": "Quale art. del codice penale va a trattare le lesioni personali gravi e gravissime?",
+      "promptRu": "Какая статья Уголовного кодекса регулирует тяжкие и особо тяжкие телесные повреждения?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "53 c.p."
+        },
+        {
+          "key": "b",
+          "textIt": "45 c.p."
+        },
+        {
+          "key": "c",
+          "textIt": "563 c.p."
+        },
+        {
+          "key": "d",
+          "textIt": "183 c.p."
+        },
+        {
+          "key": "e",
+          "textIt": "583 c.p."
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "583 c.p.",
+      "answerTranslationRu": "статья 583 Уголовного кодекса.",
+      "explanation": [
+        "Art. 583 c.p. регулирует aggravanti delle lesioni personali: lesioni gravi e gravissime.",
+        "Для экзамена:",
+        "art. 582 c.p. = lesione personale;",
+        "art. 583 c.p. = circostanze aggravanti, gravi/gravissime."
+      ]
+    },
+    {
+      "id": 17,
+      "promptIt": "Che cos’è il danno iatrogeno differenziale, ossia il maggior danno?",
+      "promptRu": "Что такое дифференциальный ятрогенный вред, то есть дополнительный вред?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Danno conseguente allo stato anteriore del danneggiato"
+        },
+        {
+          "key": "b",
+          "textIt": "È il danno che ha per effetto l’aggravamento di una lesione già esistente"
+        },
+        {
+          "key": "c",
+          "textIt": "L’aggravamento da mancata guarigione della lesione iniziale"
+        },
+        {
+          "key": "d",
+          "textIt": "Una lesione provocata dall’intervento del medico"
+        },
+        {
+          "key": "e",
+          "textIt": "È quella quota di danno ascrivibile a malpractice sanitaria"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "È quella quota di danno ascrivibile a malpractice sanitaria",
+      "answerTranslationRu": "это та часть вреда, которая относится к медицинской ошибке/malpractice.",
+      "explanation": [
+        "Danno iatrogeno differenziale — это не весь вред пациента, а только дополнительная часть, возникшая из-за неправильного медицинского вмешательства.",
+        "Нужно отделять:",
+        "исходный вред/болезнь пациента;",
+        "дополнительный вред из-за malpractice."
+      ]
+    },
+    {
+      "id": 18,
+      "promptIt": "Quale tra queste è una caratteristica comune delle lesioni da taglio:",
+      "promptRu": "Что из перечисленного является общей характеристикой резаных ран?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Tutte le risposte sono corrette"
+        },
+        {
+          "key": "b",
+          "textIt": "Sono visibili le codette"
+        },
+        {
+          "key": "c",
+          "textIt": "I margini della ferita sono netti e divaricati"
+        },
+        {
+          "key": "d",
+          "textIt": "La forma è lineare"
+        },
+        {
+          "key": "e",
+          "textIt": "Il fondo è regolare, privo di ponti e briglie di tessuto"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Tutte le risposte sono corrette",
+      "answerTranslationRu": "все ответы верны.",
+      "explanation": [
+        "Для ferite da taglio типичны:",
+        "линейная форма;",
+        "ровные, чистые края;",
+        "отсутствие тканевых перемычек;",
+        "возможные codette на концах раны;",
+        "дно раны ровное."
+      ]
+    },
+    {
+      "id": 19,
+      "promptIt": "Le lesioni colpose sono tutte procedibili a querela di parte tranne:",
+      "promptRu": "Все неосторожные телесные повреждения преследуются по жалобе потерпевшего, кроме:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Gli infortuni lavorativi"
+        },
+        {
+          "key": "b",
+          "textIt": "Le lesioni lievi"
+        },
+        {
+          "key": "c",
+          "textIt": "Tutte le risposte sono corrette"
+        },
+        {
+          "key": "d",
+          "textIt": "La perdita di un organo"
+        },
+        {
+          "key": "e",
+          "textIt": "Le lesioni familiari"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Gli infortuni lavorativi",
+      "answerTranslationRu": "производственные травмы.",
+      "explanation": [
+        "Обычные lesioni colpose часто procedibili a querela.",
+        "Исключения связаны с более значимым общественным интересом, например нарушениями правил охраны труда и производственными травмами.",
+        "Поэтому infortuni lavorativi не рассматриваются как обычная querela privata."
+      ]
+    },
+    {
+      "id": 20,
+      "promptIt": "In quale di questi casi il consenso scritto è imposto dalla legge?",
+      "promptRu": "В каком из этих случаев письменное согласие прямо требуется законом?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Donazioni e trasfusioni di sangue"
+        },
+        {
+          "key": "b",
+          "textIt": "Procreazione medicalmente assistita"
+        },
+        {
+          "key": "c",
+          "textIt": "Tutte le risposte sono corrette"
+        },
+        {
+          "key": "d",
+          "textIt": "Accertamenti sierologici di un’infezione da HIV"
+        },
+        {
+          "key": "e",
+          "textIt": "Donazione di organi tra viventi"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Tutte le risposte sono corrette",
+      "answerTranslationRu": "все ответы верны.",
+      "explanation": [
+        "В некоторых медицинских ситуациях закон требует именно письменное согласие.",
+        "Типичные случаи:",
+        "донорство и переливание крови;",
+        "PMA, procreazione medicalmente assistita;",
+        "тесты на HIV;",
+        "донорство органов между живыми."
+      ]
+    },
+    {
+      "id": 21,
+      "promptIt": "Quale tra questi è un criterio di giudizio per la valutazione del nesso di causalità sul piano materiale?",
+      "promptRu": "Какой из этих критериев используется для оценки причинной связи на материальном уровне?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Lesivo"
+        },
+        {
+          "key": "b",
+          "textIt": "Colposo"
+        },
+        {
+          "key": "c",
+          "textIt": "Generale"
+        },
+        {
+          "key": "d",
+          "textIt": "Psichico"
+        },
+        {
+          "key": "e",
+          "textIt": "Qualitativo"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Qualitativo",
+      "answerTranslationRu": "качественный.",
+      "explanation": [
+        "Критерии оценки material causalità:",
+        "cronologico;",
+        "topografico;",
+        "qualitativo;",
+        "quantitativo;",
+        "modale.",
+        "Psichico относится к психической причинности, не к материальной."
+      ]
+    },
+    {
+      "id": 22,
+      "promptIt": "In caso in cui in un delitto, dall’azione od omissione derivi un evento dannoso o pericoloso più grave di quello voluto dall’agente si parla di:",
+      "promptRu": "Если при преступлении из действия или бездействия возникает вредное или опасное событие тяжелее того, которое хотел субъект, говорят о:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Delitto causale"
+        },
+        {
+          "key": "b",
+          "textIt": "Delitto fisiognomico"
+        },
+        {
+          "key": "c",
+          "textIt": "Delitto preterintenzionale"
+        },
+        {
+          "key": "d",
+          "textIt": "Delitto doloso"
+        },
+        {
+          "key": "e",
+          "textIt": "Delitto colposo"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Delitto preterintenzionale",
+      "answerTranslationRu": "претеринтенционное преступление.",
+      "explanation": [
+        "Preterintenzione = хотел менее тяжкий результат, но наступил более тяжкий.",
+        "Пример: хотел нанести удар, но потерпевший умер.",
+        "Формула: oltre l’intenzione."
+      ]
+    },
+    {
+      "id": 23,
+      "promptIt": "Quale di questi stadi è caratterizzato dalla fluidificazione dei tessuti con produzione di un liquido nerastro denso e fetido:",
+      "promptRu": "Какая из этих стадий характеризуется разжижением тканей с образованием густой, черноватой и зловонной жидкости:",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Gassoso"
+        },
+        {
+          "key": "b",
+          "textIt": "Mummificazione"
+        },
+        {
+          "key": "c",
+          "textIt": "Colliquativo"
+        },
+        {
+          "key": "d",
+          "textIt": "Scheletrizzante"
+        },
+        {
+          "key": "e",
+          "textIt": "Colorativo"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Colliquativo",
+      "answerTranslationRu": "колликвационная стадия.",
+      "explanation": [
+        "Stadio colliquativo — стадия гниения, когда ткани разжижаются и образуется темная зловонная жидкость.",
+        "Общая последовательность: colorativo → gassoso → colliquativo → scheletrizzante."
+      ]
+    },
+    {
+      "id": 24,
+      "promptIt": "Che tipo di rapporti di causalità esistono?",
+      "promptRu": "Какие типы причинной связи существуют?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Dolosa e Colposa"
+        },
+        {
+          "key": "b",
+          "textIt": "Concausata e modale"
+        },
+        {
+          "key": "c",
+          "textIt": "Statistica e giuridico-materiale"
+        },
+        {
+          "key": "d",
+          "textIt": "Giuridico-materiale e di alta probabilità logica"
+        },
+        {
+          "key": "e",
+          "textIt": "Nessuna risposta è corretta"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Nessuna risposta è corretta",
+      "answerTranslationRu": "ни один ответ не верен.",
+      "explanation": [
+        "В стандартной формулировке выделяют causalità giuridico-materiale e psichica.",
+        "Такого варианта здесь нет, поэтому правильный ответ — nessuna risposta è corretta.",
+        "Варианты «dolosa/colposa» относятся не к causalità, а к форме вины."
+      ]
+    },
+    {
+      "id": 25,
+      "promptIt": "Che cosa si intende per escoriazione?",
+      "promptRu": "Что понимается под ссадиной?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Soluzioni di continuo della cute, con interesse più o meno esteso delle parti molli sottostanti"
+        },
+        {
+          "key": "b",
+          "textIt": "Trauma contusivo o compressivo con discontinuazione del manto cutaneo"
+        },
+        {
+          "key": "c",
+          "textIt": "Asportazione o distruzione degli strati superficiali della cute ad opera di forze che agiscono tangenzialmente"
+        },
+        {
+          "key": "d",
+          "textIt": "Stravasi di sangue, con infiltrazione ematica del sottocute da rottura di piccoli vasi per trauma contusivo o compressivo, ma senza discontinuazione del manto cutaneo"
+        },
+        {
+          "key": "e",
+          "textIt": "Modeste manifestazioni flogistiche locali, con comparsa di eritema o anche formazione di piccole vescicole accompagnate da dolore e bruciore"
+        }
+      ],
+      "correctKey": "c",
+      "correctTextIt": "Asportazione o distruzione degli strati superficiali della cute ad opera di forze che agiscono tangenzialmente",
+      "answerTranslationRu": "удаление или разрушение поверхностных слоев кожи силами, действующими тангенциально.",
+      "explanation": [
+        "Escoriazione = ссадина.",
+        "Возникает при трении/скольжении, то есть при тангенциальной силе.",
+        "Отличать:",
+        "ecchimosi = синяк без разрыва кожи;",
+        "ferita = рана с нарушением целостности кожи."
+      ]
+    },
+    {
+      "id": 26,
+      "promptIt": "Quale tra queste può essere considerata una caratteristica riguardante l’ubriachezza, come stabilito negli articoli del c.p.?",
+      "promptRu": "Что из перечисленного может считаться характеристикой опьянения согласно статьям Уголовного кодекса?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Volontaria o colposa ovvero preordinata"
+        },
+        {
+          "key": "b",
+          "textIt": "Cronica"
+        },
+        {
+          "key": "c",
+          "textIt": "Abituale"
+        },
+        {
+          "key": "d",
+          "textIt": "Da caso fortuito o di forza maggiore"
+        },
+        {
+          "key": "e",
+          "textIt": "Tutte le risposte sono corrette"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Tutte le risposte sono corrette",
+      "answerTranslationRu": "все ответы верны.",
+      "explanation": [
+        "В Уголовном кодексе рассматриваются разные формы опьянения:",
+        "случайное или из-за force majeure;",
+        "добровольное или по неосторожности;",
+        "заранее подготовленное для совершения преступления;",
+        "habitual drunkenness;",
+        "хроническая интоксикация.",
+        "Каждая форма по-разному влияет на imputabilità и наказание."
+      ]
+    },
+    {
+      "id": 27,
+      "promptIt": "Qual è l’unica condizione nella quale il medico è esonerato dall’obbligo di munirsi del preventivo valido consenso dell’avente diritto?",
+      "promptRu": "Каково единственное условие, при котором врач освобождается от обязанности предварительно получить действительное согласие пациента?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "La correttezza tecnica e deontologica della prestazione"
+        },
+        {
+          "key": "b",
+          "textIt": "In seguito a patologia grave"
+        },
+        {
+          "key": "c",
+          "textIt": "Il seguire il dovere etico"
+        },
+        {
+          "key": "d",
+          "textIt": "Non si è mai esonerati dall’obbligo del consenso"
+        },
+        {
+          "key": "e",
+          "textIt": "Lo stato di necessità"
+        }
+      ],
+      "correctKey": "e",
+      "correctTextIt": "Lo stato di necessità",
+      "answerTranslationRu": "состояние необходимости.",
+      "explanation": [
+        "Stato di necessità = экстренная ситуация, когда нужно немедленно действовать, чтобы спасти жизнь или предотвратить тяжкий вред, а получить согласие невозможно.",
+        "Просто тяжелая патология не отменяет согласие, если пациент способен его дать."
+      ]
+    },
+    {
+      "id": 28,
+      "promptIt": "Quale tra queste rientra tra le giuste cause permissive per la rivelazione di segreto professionale?",
+      "promptRu": "Что из перечисленного относится к уважительным/законным основаниям, разрешающим раскрытие профессиональной тайны?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Il referto"
+        },
+        {
+          "key": "b",
+          "textIt": "In caso di visite medico-legali di controllo richieste ed espletate per conto della struttura sanitaria pubblica"
+        },
+        {
+          "key": "c",
+          "textIt": "In caso di perizia o consulenza tecnica"
+        },
+        {
+          "key": "d",
+          "textIt": "Il consenso dell’avente diritto"
+        },
+        {
+          "key": "e",
+          "textIt": "Il certificato obbligatorio"
+        }
+      ],
+      "correctKey": "d",
+      "correctTextIt": "Il consenso dell’avente diritto",
+      "answerTranslationRu": "согласие правообладателя/заинтересованного лица.",
+      "explanation": [
+        "Segreto professionale можно раскрыть при наличии giusta causa.",
+        "Классическая permissive cause — согласие лица, которому принадлежит интерес к сохранению тайны.",
+        "Referto и certificato obbligatorio тоже могут быть законными обязанностями, но здесь формулировка спрашивает именно causa permissiva, поэтому наиболее точный ответ — согласие правообладателя."
+      ]
+    },
+    {
+      "id": 29,
+      "promptIt": "Quale articolo del Codice penale regola lo stato di necessità?",
+      "promptRu": "Какая статья Уголовного кодекса регулирует состояние необходимости?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Art. 54"
+        },
+        {
+          "key": "b",
+          "textIt": "Art. 12"
+        },
+        {
+          "key": "c",
+          "textIt": "Art. 35"
+        },
+        {
+          "key": "d",
+          "textIt": "Art. 25"
+        },
+        {
+          "key": "e",
+          "textIt": "Art. 42"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Art. 54",
+      "answerTranslationRu": "статья 54.",
+      "explanation": [
+        "Art. 54 c.p. регулирует stato di necessità.",
+        "Это ситуация, когда лицо совершает действие для спасения себя или другого от актуальной опасности тяжкого вреда.",
+        "В медицине это важно как основание вмешательства без предварительного согласия."
+      ]
+    },
+    {
+      "id": 30,
+      "promptIt": "Definiamo il CTU:",
+      "promptRu": "Как определяется CTU?",
+      "options": [
+        {
+          "key": "a",
+          "textIt": "Un ausiliario del Giudice, indipendente dalle parti e particolarmente esperto in una materia, arte o disciplina, al quale viene affidato dal giudice il compito di assisterlo per tutto il processo o per un solo atto, al fine di fornirgli le conoscenze tecniche necessarie per valutare un fatto od anche, talora, per accertare un fatto"
+        },
+        {
+          "key": "b",
+          "textIt": "Un ausiliario del Giudice, che esprime un giudizio personale fondato sulla sua esperienza professionale"
+        },
+        {
+          "key": "c",
+          "textIt": "Un amico del giudice, scelto senza alcuna selezione"
+        },
+        {
+          "key": "d",
+          "textIt": "Un esperto in una materia ormai andato in pensione e libero di dedicarsi all’attività di consulenza per il Tribunale"
+        },
+        {
+          "key": "e",
+          "textIt": "Tutte le risposte sono corrette"
+        }
+      ],
+      "correctKey": "a",
+      "correctTextIt": "Un ausiliario del Giudice, indipendente dalle parti e particolarmente esperto in una materia, arte o disciplina…",
+      "answerTranslationRu": "помощник судьи, независимый от сторон и обладающий специальными знаниями в определённой области, которому судья поручает помощь в процессе или отдельном действии для оценки или установления факта.",
+      "explanation": [
+        "CTU = Consulente Tecnico d’Ufficio.",
+        "Он назначается судьёй, независим от сторон и помогает суду в вопросах, требующих специальных технических знаний.",
+        "Не путать с CTP, consulente tecnico di parte, которого назначает сторона процесса."
+      ]
+    }
+  ]
+}

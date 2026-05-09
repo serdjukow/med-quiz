@@ -1,0 +1,809 @@
+{
+    "id": "medicina-legale-laquila-dicembre-2022",
+    "title": "Medicina Legale — L’Aquila, dicembre 2022",
+    "sourceLocale": "it",
+    "translationLocale": "ru",
+    "questions": [
+        {
+            "id": 1,
+            "promptIt": "Una lesione personale è definita grave quando:",
+            "promptRu": "Телесное повреждение считается тяжким, когда:",
+            "options": [
+                { "key": "a", "textIt": "Dal fatto deriva una malattia probabilmente o certamente insanabile" },
+                { "key": "b", "textIt": "Dal fatto deriva la deformazione ovvero lo sfregio permanente del viso" },
+                { "key": "c", "textIt": "Determina incapacità di svolgere attività della vita quotidiana per un tempo superiore ai 40 giorni" },
+                { "key": "d", "textIt": "Determina incapacità di svolgere attività della vita quotidiana per un tempo non superiore ai 5 giorni" },
+                { "key": "e", "textIt": "Dal fatto deriva una malattia probabilmente o certamente insanabile o una deformazione ovvero lo sfregio permanente del viso" }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "Determina incapacità di svolgere attività della vita quotidiana per un tempo superiore ai 40 giorni",
+            "answerTranslationRu": "вызывает неспособность выполнять обычную повседневную деятельность более 40 дней.",
+            "explanation": ["Lesione grave = болезнь или неспособность к обычным занятиям более 40 дней.", "Неизлечимая болезнь, деформация или постоянное обезображивание лица — это уже признаки lesione gravissima."]
+        },
+        {
+            "id": 2,
+            "promptIt": "Si parla di imperizia quando:",
+            "promptRu": "Об imperizia говорят, когда:",
+            "options": [
+                { "key": "a", "textIt": "Si manca di attenzione durante il compimento di un’attività" },
+                { "key": "b", "textIt": "Si verifica una condotta avventata senza ponderazione e valutazione degli interessi altrui" },
+                { "key": "c", "textIt": "Si compiono atti che presuppongono la mancata conoscenza di regole tecniche non rispettate, dunque, per ignoranza o inettitudine" },
+                { "key": "d", "textIt": "Un perito o esperto svolge una consulenza e relativa relazione per contrastare la parte in causa" },
+                { "key": "e", "textIt": "Viene compiuta un’azione su base preterintenzionale" }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "Si compiono atti che presuppongono la mancata conoscenza di regole tecniche non rispettate, dunque, per ignoranza o inettitudine",
+            "answerTranslationRu": "совершаются действия, предполагающие незнание технических правил из-за невежества или неспособности.",
+            "explanation": ["Imperizia = профессиональная некомпетентность, недостаток специальных технических знаний.", "Negligenza = невнимательность, халатность; imprudenza = рискованность, необдуманность; imperizia = неумение, отсутствие технической подготовки."]
+        },
+        {
+            "id": 3,
+            "promptIt": "Un reato si definisce colposo quando:",
+            "promptRu": "Преступление считается неосторожным, когда:",
+            "options": [
+                { "key": "a", "textIt": "L’evento è dall’agente preveduto e voluto come conseguenza della propria azione" },
+                { "key": "b", "textIt": "L’evento anche se preveduto dall’agente non è voluto" },
+                { "key": "c", "textIt": "L’evento è dall’agente voluto ma provoca conseguenze più gravi di quelle auspicate dall’agente" },
+                { "key": "d", "textIt": "Quando l’agente viene spinto dalla volontà altrui a commettere l’evento" },
+                { "key": "e", "textIt": "Nessuna risposta è corretta" }
+            ],
+            "correctKey": "b",
+            "correctTextIt": "L’evento anche se preveduto dall’agente non è voluto",
+            "answerTranslationRu": "событие, даже если было предвидено лицом, не было им желаемо.",
+            "explanation": ["Colpa = результат не желаем, но наступает из-за ошибки поведения: negligenza, imprudenza, imperizia или нарушения правил.", "Если результат предвиден и желаем — это dolo.", "Если хотел менее тяжкий результат, а наступил более тяжкий — preterintenzione."]
+        },
+        {
+            "id": 4,
+
+            "promptIt": "Un danno che riguarda il complesso estetico della persona viene definito:",
+
+            "promptRu": "Вред, касающийся эстетического облика человека, называется:",
+
+            "options": [
+                { "key": "a", "textIt": "Danno ambientale" },
+
+                { "key": "b", "textIt": "Danno visivo" },
+
+                { "key": "c", "textIt": "Danno fisiognomico" },
+
+                { "key": "d", "textIt": "Danno ectodermico" },
+
+                { "key": "e", "textIt": "Danno cicatriziale" }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "Danno fisiognomico",
+
+            "answerTranslationRu": "физиогномический вред, вред внешнему облику.",
+
+            "explanation": ["Danno fisiognomico касается внешности человека: лица, эстетического восприятия, гармонии внешнего облика.", "Это более конкретная категория, чем общий danno biologico."]
+        },
+
+        {
+            "id": 5,
+
+            "promptIt": "“È l’atto col quale l’esercente una professione sanitaria riferisce all’autorità giudiziaria di avere prestato la propria assistenza od opera in casi che possono presentare i caratteri di un delitto perseguibile d’ufficio”:",
+
+            "promptRu": "«Это акт, с помощью которого представитель медицинской профессии сообщает судебной власти, что оказал помощь или выполнил работу в случаях, которые могут иметь признаки преступления, преследуемого по инициативе государства»:",
+
+            "options": [
+                { "key": "a", "textIt": "Perizia" },
+
+                { "key": "b", "textIt": "Referto" },
+
+                { "key": "c", "textIt": "TSO" },
+
+                { "key": "d", "textIt": "Delitto" },
+
+                { "key": "e", "textIt": "Lesione" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Referto",
+
+            "answerTranslationRu": "referto, медицинское сообщение судебной власти.",
+
+            "explanation": ["Referto — обязанность медработника сообщить Autorità Giudiziaria, если случай может быть delitto perseguibile d’ufficio."]
+        },
+
+        {
+            "id": 6,
+
+            "promptIt": "In caso in cui in un delitto, dall’azione od omissione derivi un evento dannoso o pericoloso più grave di quello voluto dall’agente si parla di:",
+
+            "promptRu": "Если при преступлении из действия или бездействия возникает вредное или опасное событие тяжелее того, которое хотел субъект, говорят о:",
+
+            "options": [
+                { "key": "a", "textIt": "Delitto colposo" },
+
+                { "key": "b", "textIt": "Delitto preterintenzionale" },
+
+                { "key": "c", "textIt": "Delitto doloso" },
+
+                { "key": "d", "textIt": "Delitto causale" },
+
+                { "key": "e", "textIt": "Delitto fisiognomico" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Delitto preterintenzionale",
+
+            "answerTranslationRu": "претеринтенционное преступление.",
+
+            "explanation": ["Preterintenzione = субъект хотел менее тяжкий результат, но наступил более тяжкий."]
+        },
+
+        {
+            "id": 7,
+
+            "promptIt": "Quale di questi stadi è caratterizzato dalla fluidificazione dei tessuti con produzione di un liquido nerastro denso e fetido:",
+
+            "promptRu": "Какая из этих стадий характеризуется разжижением тканей с образованием густой, черноватой и зловонной жидкости:",
+
+            "options": [
+                { "key": "a", "textIt": "Scheletrizzante" },
+
+                { "key": "b", "textIt": "Colliquativo" },
+
+                { "key": "c", "textIt": "Colorativo" },
+
+                { "key": "d", "textIt": "Gassoso" },
+
+                { "key": "e", "textIt": "Mummificazione" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Colliquativo",
+
+            "answerTranslationRu": "колликвационная стадия.",
+
+            "explanation": ["Stadio colliquativo — стадия гниения, при которой ткани разжижаются."]
+        },
+
+        {
+            "id": 8,
+
+            "promptIt": "Il referto può essere non fatto quando:",
+
+            "promptRu": "Referto может не составляться, когда:",
+
+            "options": [
+                { "key": "a", "textIt": "Nei casi che riguardano un maggiorenne" },
+
+                { "key": "b", "textIt": "In caso di omicidio plurimo" },
+
+                { "key": "c", "textIt": "In un caso perseguibile d’ufficio, quando si esporrebbe la persona assistita a procedimento penale" },
+
+                { "key": "d", "textIt": "A richiesta del cittadino" },
+
+                { "key": "e", "textIt": "In caso di lesioni personali gravissime" }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "In un caso perseguibile d’ufficio, quando si esporrebbe la persona assistita a procedimento penale",
+
+            "answerTranslationRu": "в случае, преследуемом d’ufficio, если referto подверг бы пациента уголовному преследованию.",
+
+            "explanation": ["Это главное исключение из обязанности referto."]
+        },
+
+        {
+            "id": 9,
+
+            "promptIt": "Il concorso di cause sopravvenute, secondo l’art. 41 del c.p., se indipendenti dall’azione od omissione del colpevole:",
+
+            "promptRu": "Совокупность последующих причин по ст. 41 Уголовного кодекса, если они независимы от действия или бездействия виновного:",
+
+            "options": [
+                { "key": "a", "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento solo se trattasi di eventi dolosi" },
+
+                { "key": "b", "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento" },
+
+                { "key": "c", "textIt": "Non esclude il rapporto di causalità fra l’azione od omissione e l’evento" },
+
+                { "key": "d", "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento solo se trattasi di eventi colposi" },
+
+                { "key": "e", "textIt": "Esclude il rapporto di causalità fra l’azione od omissione e l’evento se il colpevole è soggetto ultrasessantacinquenne" }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "Non esclude il rapporto di causalità fra l’azione od omissione e l’evento",
+
+            "answerTranslationRu": "не исключает причинную связь между действием/бездействием и событием.",
+
+            "explanation": ["По art. 41 c.p. последующие причины обычно не разрывают причинную связь."]
+        },
+
+        {
+            "id": 10,
+
+            "promptIt": "È possibile definire la causa come l’antecedente:",
+
+            "promptRu": "Причину можно определить как предшествующий фактор:",
+
+            "options": [
+                { "key": "a", "textIt": "Non necessario né sufficiente a produrre l’effetto" },
+
+                { "key": "b", "textIt": "Necessario ma non sufficiente a produrre l’effetto" },
+
+                { "key": "c", "textIt": "Necessario e sufficiente a produrre l’effetto" },
+
+                { "key": "d", "textIt": "Occasionale a produrre l’effetto" },
+
+                { "key": "e", "textIt": "Condizionale a produrre l’effetto" }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "Necessario e sufficiente a produrre l’effetto",
+
+            "answerTranslationRu": "необходимый и достаточный для возникновения результата.",
+
+            "explanation": ["Causa = antecedente necessario e sufficiente."]
+        },
+
+        {
+            "id": 11,
+
+            "promptIt": "Che tipi di rapporti di causalità esistono?",
+
+            "promptRu": "Какие типы причинной связи существуют?",
+
+            "options": [
+                { "key": "a", "textIt": "Giuridico-materiale e psichica" },
+
+                { "key": "b", "textIt": "Dolosa e Colposa" },
+
+                { "key": "c", "textIt": "Concausata e modale" },
+
+                { "key": "d", "textIt": "Giuridico-materiale e di alta probabilità logica" },
+
+                { "key": "e", "textIt": "Statistica e giuridico-materiale" }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "Giuridico-materiale e psichica",
+
+            "answerTranslationRu": "юридико-материальная и психическая.",
+
+            "explanation": ["Causalità giuridico-materiale — связь между физическим действием и результатом.", "Causalità psichica — причинная связь через психическое воздействие."]
+        },
+
+        {
+            "id": 12,
+
+            "promptIt": "Quale tra questi non è un criterio di giudizio per la valutazione del nesso di causalità sul piano materiale?",
+
+            "promptRu": "Какой из перечисленных НЕ является критерием оценки причинной связи на материальном уровне?",
+
+            "options": [
+                { "key": "a", "textIt": "Cronologico" },
+
+                { "key": "b", "textIt": "Qualitativo" },
+
+                { "key": "c", "textIt": "Quantitativo" },
+
+                { "key": "d", "textIt": "Modale" },
+
+                { "key": "e", "textIt": "Psichico" }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "Psichico",
+
+            "answerTranslationRu": "психический.",
+
+            "explanation": ["Psichico относится к психической причинности, а не к материальному уровню."]
+        },
+
+        {
+            "id": 13,
+
+            "promptIt": "L’elemento psicologico del reato presente nell’art. 43 c.p. cosa va a disciplinare?",
+
+            "promptRu": "Что регулирует психологический элемент преступления по ст. 43 УК?",
+
+            "options": [
+                { "key": "a", "textIt": "Che cosa s’intende per omissione" },
+
+                { "key": "b", "textIt": "La valutazione delle concause" },
+
+                { "key": "c", "textIt": "Il carattere cronologico del reato" },
+
+                { "key": "d", "textIt": "Se il delitto è di tipo doloso, colposo o preterintenzionale" },
+
+                { "key": "e", "textIt": "La valutazione delle cause di esclusione della antigiuridicità del fatto" }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "Se il delitto è di tipo doloso, colposo o preterintenzionale",
+
+            "answerTranslationRu": "является ли преступление умышленным, неосторожным или претеринтенционным.",
+
+            "explanation": ["Art. 43 c.p. связан с формами субъективной стороны преступления."]
+        },
+        {
+            "id": 14,
+
+            "promptIt": "Quale di questi mezzi non causa una lesione da corpi contundenti?",
+
+            "promptRu": "Какое из этих средств НЕ вызывает повреждение от тупых предметов?",
+
+            "options": [
+                { "key": "a", "textIt": "Getto di idrante" },
+
+                { "key": "b", "textIt": "Gomito" },
+
+                { "key": "c", "textIt": "Bastone" },
+
+                { "key": "d", "textIt": "Coltello" },
+
+                { "key": "e", "textIt": "Martello" }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "Coltello",
+
+            "answerTranslationRu": "нож.",
+
+            "explanation": ["Coltello обычно вызывает ferite da taglio o da punta.", "Не является типичным средством тупой травмы."]
+        },
+
+        {
+            "id": 15,
+
+            "promptIt": "Che cosa si intende per ecchimosi?",
+
+            "promptRu": "Что понимается под ecchimosi?",
+
+            "options": [
+                { "key": "a", "textIt": "Asportazione o distruzione degli strati superficiali della cute ad opera di forze che agiscono tangenzialmente" },
+
+                { "key": "b", "textIt": "Soluzioni di continuo della cute, con interesse più o meno esteso delle parti molli sottostanti" },
+
+                { "key": "c", "textIt": "Modeste manifestazioni flogistiche locali, con comparsa di eritema o anche formazione di piccole vescicole accompagnate da dolore e bruciore" },
+
+                { "key": "d", "textIt": "Contusivo o compressivo con discontinuazione del manto cutaneo" },
+
+                { "key": "e", "textIt": "Stravasi di sangue, con infiltrazione ematica del sottocute da rottura di piccoli vasi per trauma contusivo o compressivo, ma senza discontinuazione del manto cutaneo" }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "Stravasi di sangue, con infiltrazione ematica del sottocute da rottura di piccoli vasi per trauma contusivo o compressivo, ma senza discontinuazione del manto cutaneo",
+
+            "answerTranslationRu": "кровоизлияние с пропитыванием подкожной ткани из-за разрыва мелких сосудов при ушибе или сдавлении, но без нарушения целостности кожи.",
+
+            "explanation": ["Ecchimosi = синяк.", "Кожа остается целой."]
+        },
+
+        {
+            "id": 16,
+
+            "promptIt": "Qual è l’ordine delle fasi che caratterizza solitamente la dinamica di un investimento tipico?",
+
+            "promptRu": "Каков порядок фаз, обычно характеризующий динамику типичного наезда транспортного средства?",
+
+            "options": [
+                { "key": "a", "textIt": "Urto – proiezione – propulsione – arrotamento – trascinamento" },
+
+                { "key": "b", "textIt": "Urto – propulsione – proiezione – arrotamento – trascinamento" },
+
+                { "key": "c", "textIt": "Urto – arrotamento – proiezione – propulsione – trascinamento" },
+
+                { "key": "d", "textIt": "Urto – arrotamento – propulsione – proiezione – trascinamento" },
+
+                { "key": "e", "textIt": "Arrotamento – Urto – proiezione – propulsione – trascinamento" }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "Urto – proiezione – propulsione – arrotamento – trascinamento",
+
+            "answerTranslationRu": "удар – отбрасывание – продвижение – переезд колесом – волочение.",
+
+            "explanation": ["Типичный механизм наезда состоит из этих последовательных фаз."]
+        },
+
+        {
+            "id": 17,
+
+            "promptIt": "Per essere giuridicamente valido il consenso della persona assistita deve qualificarsi come:",
+
+            "promptRu": "Чтобы согласие пациента было юридически действительным, оно должно быть:",
+
+            "options": [
+                { "key": "a", "textIt": "Libero" },
+
+                { "key": "b", "textIt": "Informato" },
+
+                { "key": "c", "textIt": "Immune da vizi" },
+
+                { "key": "d", "textIt": "Autentico" },
+
+                { "key": "e", "textIt": "Tutte le risposte sono corrette" }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "Tutte le risposte sono corrette",
+
+            "answerTranslationRu": "все ответы верны.",
+
+            "explanation": ["Согласие должно быть свободным, информированным, подлинным и без пороков воли."]
+        },
+
+        {
+            "id": 18,
+
+            "promptIt": "Qual è l’unica condizione nella quale il medico è esonerato dall’obbligo di munirsi del preventivo valido consenso dell’avente diritto?",
+
+            "promptRu": "Каково единственное условие, при котором врач освобождается от обязанности предварительно получить действительное согласие пациента?",
+
+            "options": [
+                { "key": "a", "textIt": "Lo stato di necessità" },
+
+                { "key": "b", "textIt": "La correttezza tecnica e deontologica della prestazione" },
+
+                { "key": "c", "textIt": "Il seguire il dovere etico" },
+
+                { "key": "d", "textIt": "In seguito a patologia grave" },
+
+                { "key": "e", "textIt": "Non si è mai esonerati dall’obbligo del consenso" }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "Lo stato di necessità",
+
+            "answerTranslationRu": "состояние необходимости.",
+
+            "explanation": ["Например, угроза жизни при невозможности получить согласие."]
+        },
+
+        {
+            "id": 19,
+
+            "promptIt": "Quale articolo va a disciplinare gli atti di disposizione del proprio corpo?",
+
+            "promptRu": "Какая статья регулирует акты распоряжения собственным телом?",
+
+            "options": [
+                { "key": "a", "textIt": "Art. 32 della Costituzione" },
+
+                { "key": "b", "textIt": "Art. 33 c.c." },
+
+                { "key": "c", "textIt": "Art. 33 c.p." },
+
+                { "key": "d", "textIt": "Art. 5 c.c." },
+
+                { "key": "e", "textIt": "Art. 5 c.p." }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "Art. 5 c.c.",
+
+            "answerTranslationRu": "статья 5 Гражданского кодекса.",
+
+            "explanation": ["Art. 5 c.c. регулирует распоряжение собственным телом."]
+        },
+
+        {
+            "id": 20,
+
+            "promptIt": "Quali sono i principi fondamentali cui il medico deve costantemente ispirare l’esercizio della propria professione?",
+
+            "promptRu": "Какими основными принципами врач должен постоянно руководствоваться в профессиональной деятельности?",
+
+            "options": [
+                { "key": "a", "textIt": "Competenza, esperienza e costanza" },
+
+                { "key": "b", "textIt": "Prudenza, impegno e conoscenza" },
+
+                { "key": "c", "textIt": "Etica, deontologia e competenza" },
+
+                { "key": "d", "textIt": "Critica, esperienza e diligenza" },
+
+                { "key": "e", "textIt": "Perizia, prudenza e diligenza" }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "Perizia, prudenza e diligenza",
+
+            "answerTranslationRu": "профессиональная компетентность, осторожность и внимательность.",
+
+            "explanation": ["Отсутствие этих качеств связано с imperizia, imprudenza и negligenza."]
+        },
+
+        {
+            "id": 21,
+
+            "promptIt": "In quanto tempo si prescrive il diritto del risarcimento del danno spettante al paziente nei confronti del medico nel caso di responsabilità extracontrattuale?",
+
+            "promptRu": "За какой срок истекает право пациента требовать возмещение вреда от врача при внедоговорной ответственности?",
+
+            "options": [
+                { "key": "a", "textIt": "15 anni" },
+
+                { "key": "b", "textIt": "7-10 anni" },
+
+                { "key": "c", "textIt": "2 anni" },
+
+                { "key": "d", "textIt": "5 anni" },
+
+                { "key": "e", "textIt": "Non esiste prescrizione per quanto riguarda la responsabilità extracontrattuale" }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "5 anni",
+
+            "answerTranslationRu": "5 лет.",
+
+            "explanation": ["Для responsabilità extracontrattuale срок давности обычно составляет 5 лет."]
+        },
+
+        {
+            "id": 22,
+
+            "promptIt": "In quale di questi casi non vi è l’obbligo di referto, in quanto si procede a querela della persona offesa?",
+
+            "promptRu": "В каком из этих случаев нет обязанности подавать referto, поскольку дело возбуждается по жалобе потерпевшего?",
+
+            "options": [
+                { "key": "a", "textIt": "Delitto contro la pietà dei defunti" },
+
+                { "key": "b", "textIt": "Delitto di percosse" },
+
+                { "key": "c", "textIt": "Delitto di violenza sessuale, quando commessa da un convivente" },
+
+                { "key": "d", "textIt": "Lesione personale grave" },
+
+                { "key": "e", "textIt": "Interruzione di gravidanza al di fuori dei legittimi casi stabiliti dalla legge 194" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Delitto di percosse",
+
+            "answerTranslationRu": "преступление побоев.",
+
+            "explanation": ["Percosse обычно преследуются по жалобе потерпевшего."]
+        },
+
+        {
+            "id": 23,
+
+            "promptIt": "Sulla base della durata della malattia, come sono classificate le lesioni personali?",
+
+            "promptRu": "На основе длительности болезни как классифицируются телесные повреждения?",
+
+            "options": [
+                { "key": "a", "textIt": "Lievi, gravi, gravissime" },
+
+                { "key": "b", "textIt": "Lievissime, lievi, gravi, gravissime" },
+
+                { "key": "c", "textIt": "Lievi, gravi" },
+
+                { "key": "d", "textIt": "Lievi, medie, gravi, gravissime" },
+
+                { "key": "e", "textIt": "Lievi, medie, gravi" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Lievissime, lievi, gravi, gravissime",
+
+            "answerTranslationRu": "очень лёгкие, лёгкие, тяжкие, особо тяжкие.",
+
+            "explanation": ["Классическая шкала medicina legale."]
+        },
+        {
+            "id": 24,
+
+            "promptIt": "Quali sono i principi fondamentali del metodo a cui deve attenersi nel suo modo di procedere il medico legale?",
+
+            "promptRu": "Каковы основные принципы метода, которых должен придерживаться судебный медик в своей работе?",
+
+            "options": [
+                { "key": "a", "textIt": "Prudenza e competenza" },
+
+                { "key": "b", "textIt": "Rigorismo obiettivo, diligenza e dominante conoscenza del rapporto giuridico cui il fatto si riferisce" },
+
+                { "key": "c", "textIt": "Rigorismo obiettivo e dominante conoscenza del rapporto giuridico cui il fatto si riferisce" },
+
+                { "key": "d", "textIt": "Rigorismo obiettivo, imperizia e dominante conoscenza del rapporto giuridico cui il fatto si riferisce" },
+
+                { "key": "e", "textIt": "Rigorismo obiettivo, pietas e dominante conoscenza del rapporto giuridico cui il fatto si riferisce" }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "Rigorismo obiettivo e dominante conoscenza del rapporto giuridico cui il fatto si riferisce",
+
+            "answerTranslationRu": "объективная строгость и глубокое знание юридического отношения, к которому относится факт.",
+
+            "explanation": ["Метод medico-legale требует объективности и понимания юридического значения медицинского факта."]
+        },
+
+        {
+            "id": 25,
+
+            "promptIt": "I fondamenti della responsabilità civile sono:",
+
+            "promptRu": "Основами гражданской ответственности являются:",
+
+            "options": [
+                { "key": "a", "textIt": "Condotta umana illecita" },
+
+                { "key": "b", "textIt": "Danno ingiusto" },
+
+                { "key": "c", "textIt": "Rapporto di causalità materiale fra la condotta illecita e l’esito dannoso" },
+
+                { "key": "d", "textIt": "Rapporto di causalità psichica fra la condotta illecita e l’esito dannoso" },
+
+                { "key": "e", "textIt": "Tutte le risposte sono corrette" }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "Tutte le risposte sono corrette",
+
+            "answerTranslationRu": "все ответы верны.",
+
+            "explanation": ["Для гражданской ответственности нужны противоправное поведение, вред и причинная связь."]
+        },
+
+        {
+            "id": 26,
+
+            "promptIt": "Nel caso del danno patrimoniale cosa si intende per danno emergente?",
+
+            "promptRu": "В рамках имущественного вреда что понимается под реальным ущербом?",
+
+            "options": [
+                { "key": "a", "textIt": "La perdita economica effettiva sofferta dal danneggiato, spese occorse per le cure mediche, sostenute e da sostenere per il futuro" },
+
+                { "key": "b", "textIt": "La perdita economica effettiva sofferta dal danneggiato, spese occorse per le cure mediche sostenute" },
+
+                { "key": "c", "textIt": "La diminuita produttività e il mancato guadagno che la persona subisce in conseguenza dell’evento dannoso" },
+
+                { "key": "d", "textIt": "La diminuita produttività che la persona subisce in conseguenza dell’evento dannoso" },
+
+                { "key": "e", "textIt": "Nessuna risposta è corretta" }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "La perdita economica effettiva sofferta dal danneggiato, spese occorse per le cure mediche, sostenute e da sostenere per il futuro",
+
+            "answerTranslationRu": "фактические экономические потери потерпевшего, включая расходы на лечение, уже понесённые и будущие.",
+
+            "explanation": ["Danno emergente = реальные финансовые потери."]
+        },
+
+        {
+            "id": 27,
+
+            "promptIt": "“Qualsiasi menomazione, permanente o temporanea, dell’integrità psico-fisica della persona, riguardata sia nei suoi aspetti statici, sia nei suoi aspetti dinamico-relazionali, passibile di accertamento e di valutazione medico-legale, indipendentemente da ogni riferimento alla capacità di produrre reddito.” Questa è la definizione di quale tipo di danno?",
+
+            "promptRu": "«Любое постоянное или временное нарушение психофизической целостности человека, рассматриваемое как в статических, так и в динамико-реляционных аспектах, подлежащее медико-правовому установлению и оценке, независимо от способности получать доход». Это определение какого вида вреда?",
+
+            "options": [
+                { "key": "a", "textIt": "Patrimoniale" },
+
+                { "key": "b", "textIt": "Biologico" },
+
+                { "key": "c", "textIt": "Emergente" },
+
+                { "key": "d", "textIt": "Soggettivo" },
+
+                { "key": "e", "textIt": "Invalidante" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Biologico",
+
+            "answerTranslationRu": "биологический вред.",
+
+            "explanation": ["Danno biologico = вред психофизической целостности независимо от дохода."]
+        },
+
+        {
+            "id": 28,
+
+            "promptIt": "Quale articolo del codice penale disciplina l’imputabilità e la capacità di intendere e di volere?",
+
+            "promptRu": "Какая статья Уголовного кодекса регулирует вменяемость и способность понимать и желать?",
+
+            "options": [
+                { "key": "a", "textIt": "Art. 97" },
+
+                { "key": "b", "textIt": "Art. 85" },
+
+                { "key": "c", "textIt": "Art. 168" },
+
+                { "key": "d", "textIt": "Art. 14" },
+
+                { "key": "e", "textIt": "Art. 165" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Art. 85",
+
+            "answerTranslationRu": "статья 85 Уголовного кодекса.",
+
+            "explanation": ["Imputabilità основана на capacità di intendere e di volere."]
+        },
+
+        {
+            "id": 29,
+
+            "promptIt": "La capacità di intendere vuol dire attitudine a:",
+
+            "promptRu": "Способность понимать означает способность:",
+
+            "options": [
+                { "key": "a", "textIt": "Rendersi conto degli atti compiuti e a prevederne la portata e gli effetti" },
+
+                { "key": "b", "textIt": "Scegliere liberamente la condotta adatta allo scopo" },
+
+                { "key": "c", "textIt": "Scegliere liberamente la condotta adatta allo scopo prevedendo gli effetti" },
+
+                { "key": "d", "textIt": "Rendersi conto degli atti compiuti" },
+
+                { "key": "e", "textIt": "Rendersi conto della portata e gli effetti delle azioni illecite" }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "Rendersi conto degli atti compiuti e a prevederne la portata e gli effetti",
+
+            "answerTranslationRu": "осознавать совершаемые действия и предвидеть их значение и последствия.",
+
+            "explanation": ["Capacità di intendere = интеллектуальная способность понимать последствия своих действий."]
+        },
+
+        {
+            "id": 30,
+
+            "promptIt": "Che cosa si intende per T.S.O. nella Legge Basaglia?",
+
+            "promptRu": "Что означает T.S.O. в законе Basaglia?",
+
+            "options": [
+                { "key": "a", "textIt": "Terapia Sostitutiva Ormonale" },
+
+                { "key": "b", "textIt": "Trattamento Sanitario Obbligatorio" },
+
+                { "key": "c", "textIt": "Trattamento Sanitario Opzionale" },
+
+                { "key": "d", "textIt": "Terapia Sanitaria Obbligatoria" },
+
+                { "key": "e", "textIt": "Nessuna risposta è corretta" }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Trattamento Sanitario Obbligatorio",
+
+            "answerTranslationRu": "обязательное медицинское лечение.",
+
+            "explanation": ["TSO = Trattamento Sanitario Obbligatorio.", "Применяется в исключительных условиях в психиатрической практике."]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--chakra-colors-chakra-body-text);
+    background: var(--chakra-colors-chakra-body-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 64px; // 16 * 4 = 64px для мобильных
+    overflow-y: auto;
+
+    @media (min-width: 768px) {
+        padding-top: 80px; // 20 * 4 = 80px для десктопа
+    }
+}
+
+ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.page {
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.page {
+    background: linear-gradient(to bottom right, #f7fafc, #edf2f7, #e6fffa);
+}
+
+.chakra-ui-dark .page {
+    background: linear-gradient(to bottom right, #1a202c, #2d3748, #2f855a);
+}

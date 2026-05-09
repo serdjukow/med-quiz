@@ -1,0 +1,27 @@
+.logo {
+    flex: 0 0 180px;
+    text-decoration: none;
+    display: inline-block;
+    .logo-text {
+        display: block;
+        line-height: 1.1;
+        white-space: nowrap;
+    }
+
+    @media (min-width: 768px) {
+        flex: 0 0 230px;
+    }
+}
+
+.header-nav-link {
+    & > * {
+        transition: color 0.2s ease-in;
+    }
+    &.active > * {
+        color: #ed8936;
+    }
+}
+
+ul {
+    list-style: none;
+}

@@ -1,0 +1,1277 @@
+{
+    "id": "medicina-legale-tor-vergata-2024",
+    "title": "Medicina Legale — Tor Vergata 2024",
+    "sourceLocale": "it",
+    "translationLocale": "ru",
+    "questions": [
+        {
+            "id": 1,
+            "promptIt": "Nella morte per avvelenamento da monossido di carbonio, le ipostasi sono di colore:",
+            "promptRu": "При отравлении CO какой цвет трупных пятен?",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "giallo brunastro"
+                },
+                {
+                    "key": "b",
+                    "textIt": "bluastro"
+                },
+                {
+                    "key": "c",
+                    "textIt": "bruno caffè"
+                },
+                {
+                    "key": "d",
+                    "textIt": "rosso vivo"
+                },
+                {
+                    "key": "e",
+                    "textIt": "verdastro"
+                }
+            ],
+            "correctKey": "d",
+            "correctTextIt": "rosso vivo",
+            "answerTranslationRu": "ярко-красный",
+            "explanation": ["CO → карбоксигемоглобин → ярко-красная кровь.", "Классический вопрос."]
+        },
+        {
+            "id": 2,
+            "promptIt": "Quando può non essere fatto il referto?",
+            "promptRu": "Когда можно не делать referto?",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "a richiesta dell'assistito"
+                },
+                {
+                    "key": "b",
+                    "textIt": "in caso di delitto di lesione personale dolosa gravissima"
+                },
+                {
+                    "key": "c",
+                    "textIt": "in caso di omicidio doloso"
+                },
+                {
+                    "key": "d",
+                    "textIt": "nei casi che riguardano un maggiorenne"
+                },
+                {
+                    "key": "e",
+                    "textIt": "in casi perseguibili d'ufficio, quando si esporrebbe la persona assistita a procedimento penale"
+                }
+            ],
+            "correctKey": "e",
+            "correctTextIt": "in casi perseguibili d'ufficio, quando si esporrebbe la persona assistita a procedimento penale",
+            "answerTranslationRu": "если это подвергает пациента уголовному преследованию",
+            "explanation": ["Важнейшее исключение.", "Защита пациента приоритетна."]
+        },
+        {
+            "id": 3,
+            "promptIt": "L'escoriazione:",
+            "promptRu": "Ссадина возникает:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "è caratterizzata solamente da eritema"
+                },
+                {
+                    "key": "b",
+                    "textIt": "si verifica ad opera di forze che agiscono con componente pressoria esclusiva"
+                },
+                {
+                    "key": "c",
+                    "textIt": "si verifica ad opera di forze che agiscono tangenzialmente con componente pressoria"
+                },
+                {
+                    "key": "d",
+                    "textIt": "si verifica ad opera di forze che agiscono solo perpendicolarmente"
+                },
+                {
+                    "key": "e",
+                    "textIt": "si verifica solo nelle sedi coperte dagli indumenti"
+                }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "si verifica ad opera di forze che agiscono tangenzialmente con componente pressoria",
+            "answerTranslationRu": "при касательном воздействии с давлением",
+            "explanation": ["Трение + давление.", "Не просто удар."]
+        },
+        {
+            "id": 4,
+            "promptIt": "Il fenomeno della \"rosata\" in quale tipologia di arma si riscontra:",
+            "promptRu": "Феномен «rosata» встречается у какого типа оружия?",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "nelle armi da fuoco a canna corta e rigata"
+                },
+                {
+                    "key": "b",
+                    "textIt": "nelle armi da fuoco a canna corta e liscia"
+                },
+                {
+                    "key": "c",
+                    "textIt": "nelle armi da punta e taglio"
+                },
+                {
+                    "key": "d",
+                    "textIt": "nelle armi da fuoco automatiche a carica unica"
+                },
+                {
+                    "key": "e",
+                    "textIt": "nelle armi da fuoco a carica multipla"
+                }
+            ],
+            "correctKey": "e",
+            "correctTextIt": "nelle armi da fuoco a carica multipla",
+            "answerTranslationRu": "огнестрельное оружие с множественным зарядом",
+            "explanation": ["Дробь → рассеивание → «rosata»."]
+        },
+        {
+            "id": 5,
+            "promptIt": "La corificazione è:",
+            "promptRu": "Коррификация — это:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "un fenomeno cadaverico consecutivo"
+                },
+                {
+                    "key": "b",
+                    "textIt": "l'organizzazione dei corifei"
+                },
+                {
+                    "key": "c",
+                    "textIt": "un fenomeno cadaverico trasformativo"
+                },
+                {
+                    "key": "d",
+                    "textIt": "una particolare tecnica di imbalsamazione"
+                },
+                {
+                    "key": "e",
+                    "textIt": "un sistema di classificazione delle malattie cardiache"
+                }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "un fenomeno cadaverico trasformativo",
+            "answerTranslationRu": "трансформационный трупный процесс",
+            "explanation": ["Частичная консервация тканей."]
+        },
+        {
+            "id": 6,
+            "promptIt": "L'orletto di detersione:",
+            "promptRu": "Кольцо очистки:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "è formato da piccoli lembi di cute che si sfrangiano all'impatto del proiettile"
+                },
+                {
+                    "key": "b",
+                    "textIt": "è un piccolo cercine di colore biancastro e di aspetto pulito"
+                },
+                {
+                    "key": "c",
+                    "textIt": "è un piccolo cercine di colore nerastro e di aspetto untuoso"
+                },
+                {
+                    "key": "d",
+                    "textIt": "è indicativo del tipo di arma usata"
+                },
+                {
+                    "key": "e",
+                    "textIt": "è frequente con le moderne armi da fuoco"
+                }
+            ],
+            "correctKey": "b",
+            "correctTextIt": "è un piccolo cercine di colore biancastro e di aspetto pulito",
+            "answerTranslationRu": "светлое чистое кольцо",
+            "explanation": ["Входное огнестрельное отверстие."]
+        },
+        {
+            "id": 7,
+            "promptIt": "La perdita di una mano costituisce:",
+            "promptRu": "Потеря кисти составляет:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "indebolimento permanente di un organo"
+                },
+                {
+                    "key": "b",
+                    "textIt": "la perdita di un organo"
+                },
+                {
+                    "key": "c",
+                    "textIt": "mutilazione che rende l'arto inservibile"
+                },
+                {
+                    "key": "d",
+                    "textIt": "perdita di un arto"
+                },
+                {
+                    "key": "e",
+                    "textIt": "malattia certamente o probabilmente insanabile"
+                }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "mutilazione che rende l'arto inservibile",
+            "answerTranslationRu": "увечье, делающее конечность нефункциональной",
+            "explanation": []
+        },
+        {
+            "id": 8,
+            "promptIt": "Di quale tipo di lesione costituiscono un carattere tipico le codette:",
+            "promptRu": "Для какого типа повреждений характерны «хвостики»?",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "ferite da fendente"
+                },
+                {
+                    "key": "b",
+                    "textIt": "ferite lacero-contuse"
+                },
+                {
+                    "key": "c",
+                    "textIt": "ferite da corpo contundente"
+                },
+                {
+                    "key": "d",
+                    "textIt": "ferite d'arma da fuoco"
+                },
+                {
+                    "key": "e",
+                    "textIt": "ferite da taglio"
+                }
+            ],
+            "correctKey": "e",
+            "correctTextIt": "ferite da taglio",
+            "answerTranslationRu": "резаные раны",
+            "explanation": ["Направление движения лезвия."]
+        },
+        {
+            "id": 9,
+            "promptIt": "Nelle differenti fasi dell'asfissia, il terzo stadio è:",
+            "promptRu": "В различных стадиях асфиксии третья стадия — это:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "lo stadio della fase apnoica"
+                },
+                {
+                    "key": "b",
+                    "textIt": "nessuna delle altre risposte"
+                },
+                {
+                    "key": "c",
+                    "textIt": "lo stadio così detto del \"boccheggiamento\""
+                },
+                {
+                    "key": "d",
+                    "textIt": "lo stadio della dispnea espiratoria"
+                },
+                {
+                    "key": "e",
+                    "textIt": "lo stadio della dispnea inspiratoria"
+                }
+            ],
+            "correctKey": "c",
+            "correctTextIt": "lo stadio così detto del \"boccheggiamento\"",
+            "answerTranslationRu": "судорожное дыхание (агональные вдохи)",
+            "explanation": []
+        },
+        {
+            "id": 10,
+            "promptIt": "La saponificazione è un processo trasformativo particolare che si realizza nei cadaveri:",
+            "promptRu": "Омыление — это особый трансформационный процесс, происходящий в трупах:",
+            "options": [
+                {
+                    "key": "a",
+                    "textIt": "che si trovino in ambienti caldi, asciutti e ventilati"
+                },
+                {
+                    "key": "b",
+                    "textIt": "sommersi o inumati in terreni umidi"
+                },
+                {
+                    "key": "c",
+                    "textIt": "che restano a lungo all'aperto nei mesi caldi"
+                },
+                {
+                    "key": "d",
+                    "textIt": "la cui superficie corporea era stata interessata da estese ustioni"
+                },
+                {
+                    "key": "e",
+                    "textIt": "in qualunque condizione si trovino, dopo un minimo di 12 mesi"
+                }
+            ],
+            "correctKey": "b",
+            "correctTextIt": "sommersi o inumati in terreni umidi",
+            "answerTranslationRu": "во влажной среде",
+            "explanation": ["Adipocera."]
+        },
+        {
+            "id": 11,
+
+            "promptIt": "La morte si identifica:",
+
+            "promptRu": "Смерть определяется:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "con la perdita della funzione cardiaca"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "con la perdita dei riflessi spinali"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "con la cessazione irreversibile di tutte le funzioni dell'encefalo"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "con il collasso cardio-circolatorio"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "con l'arresto del respiro"
+                }
+            ],
+
+            "correctKey": "c",
+
+            "correctTextIt": "con la cessazione irreversibile di tutte le funzioni dell'encefalo",
+
+            "answerTranslationRu": "необратимое прекращение всех функций мозга",
+
+            "explanation": []
+        },
+
+        {
+            "id": 12,
+
+            "promptIt": "Perché l'infortunio lavorativo sia riconosciuto deve procurare una inabilità temporanea totale superiore a:",
+
+            "promptRu": "Чтобы несчастный случай на работе был признан, он должен вызвать временную полную нетрудоспособность более:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "Due giorni"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "Tre giorni"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "Dieci giorni"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "Sette giorni"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "nessuna delle altre risposte"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Tre giorni",
+
+            "answerTranslationRu": "3 дней",
+
+            "explanation": []
+        },
+
+        {
+            "id": 13,
+
+            "promptIt": "Il periodo di osservazione nei casi di morte cerebrale di persone adulte è di:",
+
+            "promptRu": "Период наблюдения при смерти мозга у взрослых составляет:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "7 ore"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "6 ore"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "8 ore"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "48 ore"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "pochi minuti"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "6 ore",
+
+            "answerTranslationRu": "6 часов",
+
+            "explanation": []
+        },
+
+        {
+            "id": 14,
+
+            "promptIt": "L'impiccamento è \"completo\" quando:",
+
+            "promptRu": "Повешение считается «полным», когда:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "l'individuo è inginocchiato, seduto o semiprono"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "l'individuo tocca terra con i piedi o con altre parti del corpo"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "è simulato"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "il nodo del laccio corrisponde alla nuca"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "il corpo si trova completamente sospeso nel vuoto, senza appoggio"
+                }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "il corpo si trova completamente sospeso nel vuoto, senza appoggio",
+
+            "answerTranslationRu": "тело полностью подвешено без опоры",
+
+            "explanation": []
+        },
+
+        {
+            "id": 15,
+
+            "promptIt": "Per \"strangolamento\" si intende:",
+
+            "promptRu": "Под «strangolamento» понимается:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "la compressione del collo eseguita con le mani"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "è sinonimo di impiccamento"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "la costrizione del torace da parte di un grave"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "la compressione digitale del glomo carotideo"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "la compressione esercitata da un laccio avvolto intorno al collo"
+                }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "la compressione esercitata da un laccio avvolto intorno al collo",
+
+            "answerTranslationRu": "сдавление шеи петлёй",
+
+            "explanation": []
+        },
+
+        {
+            "id": 16,
+
+            "promptIt": "Le ecchimosi si producono attraverso meccanismi di:",
+
+            "promptRu": "Экхимозы возникают через механизмы:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "percussione"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "patologie del sangue o dei vasi"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "suzione"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "tutte le altre risposte"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "compressione"
+                }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "tutte le altre risposte",
+
+            "answerTranslationRu": "все перечисленные механизмы",
+
+            "explanation": ["Травма / болезни / давление / всасывание."]
+        },
+
+        {
+            "id": 17,
+
+            "promptIt": "Per procedere all'interdizione l'infermità di mente deve essere:",
+
+            "promptRu": "Для признания недееспособности психическое расстройство должно быть:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "Temporanea"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "Permanente"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "Basta che sia grave"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "Abituale"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "Media"
+                }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "Abituale",
+
+            "answerTranslationRu": "хроническим / постоянным",
+
+            "explanation": []
+        },
+
+        {
+            "id": 18,
+
+            "promptIt": "In quale distretto corporeo si svolge, in condizioni normali, la prima fase dei fenomeni cadaverici putrefattivi?",
+
+            "promptRu": "В каком отделе тела в нормальных условиях начинается первая стадия гниения?",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "nelle cavità cardiache sinistre"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "nel grosso intestino ed in particolare nel cieco"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "nei polmoni ed in particolare nei lobi inferiori"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "nei ventricoli cerebrali"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "nello stomaco"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "nel grosso intestino ed in particolare nel cieco",
+
+            "answerTranslationRu": "в толстом кишечнике, особенно в слепой кишке",
+
+            "explanation": []
+        },
+
+        {
+            "id": 19,
+
+            "promptIt": "La capacità di agire:",
+
+            "promptRu": "Дееспособность:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "si acquisisce alla maggior età"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "nessuna delle altre risposte è vera"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "si perde negli stati d' incoscienza"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "una volta acquisita non è viene mai persa"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "si acquisisce alla nascita"
+                }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "si acquisisce alla maggior età",
+
+            "answerTranslationRu": "приобретается с совершеннолетием",
+
+            "explanation": []
+        },
+
+        {
+            "id": 20,
+
+            "promptIt": "Perché sia configurabile il delitto di percosse:",
+
+            "promptRu": "Чтобы деяние квалифицировалось как побои:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "il delitto deve essere preterintenzionale"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "il delitto deve essere colposo"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "la malattia deve essere di durata inferiore ai 20 giorni"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "devono essere usati mezzi di offesa naturali"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "dal fatto non deriva una malattia nel corpo o nella mente"
+                }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "dal fatto non deriva una malattia nel corpo o nella mente",
+
+            "answerTranslationRu": "не должно возникать болезни тела или психики",
+
+            "explanation": []
+        },
+
+        {
+            "id": 21,
+
+            "promptIt": "L'effetto locale tipico dell'elettrocuzione è rappresentato da una delle seguenti lesioni:",
+
+            "promptRu": "Типичным местным эффектом электротравмы является:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "vibice"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "marchio elettrico"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "ecchimosi"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "ferita penetrante"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "escoriazione"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "marchio elettrico",
+
+            "answerTranslationRu": "электрическая метка",
+
+            "explanation": []
+        },
+
+        {
+            "id": 22,
+
+            "promptIt": "Si definisce lesione personale grave e non gravissima:",
+
+            "promptRu": "Тяжким, но не особо тяжким телесным повреждением считается:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "una malattia certamente o probabilmente insanabile"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "la perdita dell'uso di un arto"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "la perdita di un senso"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "una malattia che mette in pericolo la vita della persona offesa, ovvero una malattia o l'incapacità di attendere alle ordinarie occupazioni per un tempo superiore ai 40 giorni"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "la perdita della capacità di procreare"
+                }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "una malattia che mette in pericolo la vita della persona offesa, ovvero una malattia o l'incapacità di attendere alle ordinarie occupazioni per un tempo superiore ai 40 giorni",
+
+            "answerTranslationRu": "болезнь с опасностью для жизни или нетрудоспособностью более 40 дней",
+
+            "explanation": []
+        },
+
+        {
+            "id": 23,
+
+            "promptIt": "Il fungo \"schiumoso\" è suggestivo di:",
+
+            "promptRu": "«Пенный гриб» характерен для:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "annegamento"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "shock settico"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "intossicazione da monossido di carbonio"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "arma da fuoco"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "overdose"
+                }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "annegamento",
+
+            "answerTranslationRu": "утопления",
+
+            "explanation": []
+        },
+
+        {
+            "id": 24,
+
+            "promptIt": "Le macchie ipostatiche compaiono:",
+
+            "promptRu": "Трупные пятна появляются:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "in tutti i cadaveri"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "nei cadaveri delle persone morte improvvisamente"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "nei cadaveri degli impiccati"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "nei cadaveri delle persone morte per avvelenamento"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "nei cadaveri delle persone morte tra le fiamme"
+                }
+            ],
+
+            "correctKey": "a",
+
+            "correctTextIt": "in tutti i cadaveri",
+
+            "answerTranslationRu": "у всех трупов",
+
+            "explanation": []
+        },
+
+        {
+            "id": 25,
+
+            "promptIt": "La capacità giuridica si acquista:",
+
+            "promptRu": "Правоспособность приобретается:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "quando si è in grado di valutare un danno alla persona"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "alla nascita"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "a 21 anni"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "a 18 anni"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "con l'abilitazione professionale all'esercizio della professione forense"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "alla nascita",
+
+            "answerTranslationRu": "с рождения",
+
+            "explanation": []
+        },
+
+        {
+            "id": 26,
+
+            "promptIt": "La lesione personale è grave se:",
+
+            "promptRu": "Телесное повреждение считается тяжким, если:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "la malattia ha una durata superiore a 21 e minore di 40 giorni"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "vi è mutilazione che renda entrambi gli arti inservibili"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "vi è mutilazione che renda l'arto inservibile"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "vi è incapacità di attendere alle ordinarie occupazioni superiore a 40 giorni"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "tutte le altre risposte sono corrette"
+                }
+            ],
+
+            "correctKey": "e",
+
+            "correctTextIt": "tutte le altre risposte sono corrette",
+
+            "answerTranslationRu": "все варианты верны",
+
+            "explanation": []
+        },
+
+        {
+            "id": 27,
+
+            "promptIt": "Nell'ambito della colpa generica, imperizia significa:",
+
+            "promptRu": "В рамках общей неосторожности imperizia означает:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "avventatezza"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "superficialità e carenza di sollecitudine"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "svogliatezza e leggerezza"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "carenza della preparazione tecnica adeguata e necessaria"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "disattenzione e dimenticanza"
+                }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "carenza della preparazione tecnica adeguata e necessaria",
+
+            "answerTranslationRu": "недостаток необходимой технической подготовки",
+
+            "explanation": []
+        },
+
+        {
+            "id": 28,
+
+            "promptIt": "La lesione personale colposa è gravissima se:",
+
+            "promptRu": "Неосторожное телесное повреждение является особо тяжким, если:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "se dal fatto deriva una malattia di durata superiore ai 20 giorni ma inferiore ai 40 giorni"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "se dal fatto deriva la perdita di un arto o di un organo"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "se da fatto deriva un pericolo di vita"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "se dal fatto deriva l'indebolimento permanente di un organo"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "se dal fatto deriva una malattia di durata superiore ai 40 giorni"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "se dal fatto deriva la perdita di un arto o di un organo",
+
+            "answerTranslationRu": "если наступила потеря конечности или органа",
+
+            "explanation": []
+        },
+
+        {
+            "id": 29,
+
+            "promptIt": "L'invalidità civile può essere ottenuta:",
+
+            "promptRu": "Гражданская инвалидность может быть получена:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "Dai soggetti già riconosciuti invalidi dall'INPS"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "Da qualsiasi cittadino in possesso dei requisiti di legge"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "Dai soggetti affetti da postumi di infortunio o di malattia professionale"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "Nessuna delle altre risposte"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "Solo dai cittadini italiani"
+                }
+            ],
+
+            "correctKey": "b",
+
+            "correctTextIt": "Da qualsiasi cittadino in possesso dei requisiti di legge",
+
+            "answerTranslationRu": "любым гражданином при соблюдении требований закона",
+
+            "explanation": []
+        },
+
+        {
+            "id": 30,
+
+            "promptIt": "L'asfissia per costrizione manuale delle vie respiratorie al collo viene indicata con uno dei seguenti nomi:",
+
+            "promptRu": "Асфиксия вследствие ручного сдавления шеи называется:",
+
+            "options": [
+                {
+                    "key": "a",
+
+                    "textIt": "impiccamento"
+                },
+
+                {
+                    "key": "b",
+
+                    "textIt": "soffocazione"
+                },
+
+                {
+                    "key": "c",
+
+                    "textIt": "annegamento"
+                },
+
+                {
+                    "key": "d",
+
+                    "textIt": "strangolamento"
+                },
+
+                {
+                    "key": "e",
+
+                    "textIt": "strozzamento"
+                }
+            ],
+
+            "correctKey": "d",
+
+            "correctTextIt": "strangolamento",
+
+            "answerTranslationRu": "удушение",
+
+            "explanation": []
+        }
+    ]
+}
